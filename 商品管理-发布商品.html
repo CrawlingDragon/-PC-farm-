@@ -7,6 +7,11 @@
 	<link rel="stylesheet" href="css/common.css" type="text/css">
 	<link rel="stylesheet" href="css/seller.css" type="text/css">
 	<script type="text/javascript" src="js/jquery.1.11.3.min.js"></script>
+	<script type="text/javascript" charset="utf-8" src="UED/ueditor.config.js"></script>
+	<!-- 编辑器源码文件 -->
+	<script type="text/javascript"  charset="utf-8" src="UED/ueditor.all.min.js"></script>
+	<script type="text/javascript" charset="utf-8" src="UED/lang/zh-cn.js"></script>
+    <!-- 实例化编辑器 -->
 	<!--[if IE]> 
 	<script> 
 	(function(){if(!/*@cc_on!@*/0)return;var e = "header,footer,nav,article,section".split(','),i=e.length;while(i--){document.createElement(e[i])}})() 
@@ -346,8 +351,74 @@
 					<div class="issueGoods-contentBottom">
 							<img src="images/issueGoodsAdd.png" alt=""><span>继续添加规格</span>
 					</div>
+					<!-- 商品图片 -->
+					<div class="issueGoods-img">
+						<h4>商品图片</h4>
+						<div class="issueGoods-imgRight">
+							<span class="photos">
+								<p>选择文件</p>
+								<p>尺寸800*800</p>
+							</span>
+							<span class="photos">
+								<p>选择文件</p>
+								<p>尺寸800*800</p>
+							</span>
+							<span class="photos">
+								<p>选择文件</p>
+								<p>尺寸800*800</p>
+							</span>
+							<span class="photos">
+								<p>选择文件</p>
+								<p>尺寸800*800</p>
+							</span>
+							<span class="photos">
+								<p>选择文件</p>
+								<p>尺寸800*800</p>
+							</span>
+							<h5>文件格式JPG、JPEG、PNG文件大小2M以内，建议尺寸800px*800px</h5>
+						</div>
+					</div>
+					<!-- 商品详情 -->
+					<div class="issueGoods-detail">
+						<h4>商品详情:</h4>
+						<div class="issueGoods-detailRight">
+							<script id="container" name="content" type="text/plain" style="width:882px;height:372px;">
+        						<!-- 输入板内容 -->
+    						</script>
+						</div>
+					</div>
+					<!-- 运费模版设置 -->
+					<div class="issueGoods-label">
+						<label for="">运费模板:</label>
+						<select name="" id="">
+							<option value="">免运费</option>
+							<option value="">运费5元</option>
+						</select>
+						<a href="" class="f12 green">编辑运费模板</a>
+					</div>
+					<!-- 商品状态 -->
+					<div class="issueGoods-label">
+						<label for="">商品状态:</label>
+						<input type="radio" name="gActive1" id=""><span>立即发布</span>
+						<input type="radio" name="gActive1" id=""><span>放入仓库</span>
+					</div>
+					<!-- 红包设置 -->
+					<div class="issueGoods-label">
+						<label for="">红包设置:</label>
+						<input type="radio" name="gActive2" id=""><span>赠送</span>
+						<input type="radio" name="gActive2" id=""><span>不赠送</span>
+					</div>
+					<!-- 红包比例 -->
+					<div class="issueGoods-label">
+						<label for="">红包比例:</label>
+						<select name="" id="">
+							<option value="">100%</option>
+							<option value="">99%</option>
+						</select>
+					</div>
 				</div>
 				<!-- 商品内容结束 -->
+				<button class="issueBtn">好了，马上发布商品</button>
 			</article>
 		</div>
 	</section><!-- 主体内容结束 -->
@@ -416,9 +487,16 @@
 		leftHeight = $(".categoryGoods-right").attr("height");
 	})
 </script>
-<script type="text/javascript" language="javascript">   
-
-
+<script type="text/javascript">
+ 	var ue = UE.getEditor('container');
+ 	function isFocus(e){
+        alert(UE.getEditor('editor').isFocus());
+        UE.dom.domUtils.preventDefault(e)
+    }
+    function setblur(e){
+        UE.getEditor('editor').blur();
+        UE.dom.domUtils.preventDefault(e)
+    }
 
 </script>
 </body>
