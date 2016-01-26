@@ -1,0 +1,456 @@
+﻿/*首页主体内容*/
+.container{
+	width: 100%;
+	border-top: 1px solid #eeeeee;
+}
+.bannarBox{
+	width: 1190px;
+	margin:0 auto;
+	height: 38px;
+}
+.bannarBox .bannarLeft{
+	width: 250px;
+	float: left;
+	position: relative;
+}
+.bannarBox .bannarLeft .title{
+	width: 250px;
+	height: 38px;
+	line-height: 38px;
+	background: #548d35;
+	color: #fff;
+}
+.bannarBox .bannarLeft .title img{
+	display: inline-block;
+	width: 14px;
+	height: 11px;
+	margin-left: 14px;
+	margin-right: 15px;
+}
+.bannarBox .bannarLeft .showBox{
+	position: absolute;
+	top: 38px;
+	left: 0;
+	width: inherit;
+	border: 1px solid #548d35;
+	box-sizing:border-box;
+	background: #fff;
+	z-index: 111;
+	height: 653px;
+}
+.bannarBox .bannarLeft .showBox dl{
+	width: 220px;
+	margin-left: 15px;
+	border-bottom:1px solid #eeeeee;
+	padding-bottom: 6px;
+}
+.bannarBox .bannarLeft .showBox dl dt{
+	font-size: 18px;
+	font-weight: bold;
+	height: 56px;
+	width: inherit;
+	line-height: 46px;
+}
+.bannarBox .bannarLeft .showBox dl dd{
+	display: inline-block;
+	margin-right: 13px;
+	font-size: 12px;
+	margin-bottom: 12px;
+	-webkit-margin-bottom: 12px;
+	-moz-margin-bottom: 9px;
+	-ms-margin-bottom: 9px;
+	-o-margin-bottom: 9px;
+}
+.bannarBox .bannarLeft .showBox dl:nth-child(1) dt img{
+	display: inline-block;
+	width: 14px;
+	height: 22px;
+	vertical-align: middle;
+	margin-top: -3px;
+}
+.bannarBox .bannarLeft .showBox dl dt img{
+	display: inline-block;
+	vertical-align: middle;
+}
+.bannarBox .bannarLeft .showBox dl:nth-child(2) dt img{
+	width:19px;
+	height: 19px;
+	margin-top: -4px;
+}
+.bannarBox .bannarLeft .showBox dl:nth-child(3) dt img{
+	width: 21px;
+	height: 26px;
+	margin-top: -5px;
+}
+.bannarBox .bannarLeft .showBox dl:nth-child(4) dt img{
+	width: 17px;
+	height: 16px;
+	margin-top: -5px;
+}
+.bannarBox .bannarLeft .showBox dl:nth-child(5) dt img{
+	width: 20px;
+	height: 25px;
+	margin-top: -3px;
+}
+.bannarBox .bannarMiddle{
+	float: left;
+	width: 740px;
+}
+.bannarBox .bannarMiddle ul{
+	margin-left: 50px;
+}
+.bannarBox .bannarMiddle ul li{
+	display: inline-block;
+	line-height: 34px;
+	margin-right: 66px;
+}
+.bannarBox .bannarMiddle ul .active{
+	border-bottom: 3px solid #548d35;
+}
+.bannarBox .bannarMiddle ul li a {
+	font-size: 16px;
+}
+.bannarBox .bannarRight{
+	float: right;
+	width: 189px;
+	position: relative;
+}
+.bannarBox .bannarRight h4{
+	width: 100%;
+    line-height: 38px;
+    text-align: center;
+    border-bottom: 2px solid #589325;
+    background: url(../images/bj.png) no-repeat;
+	background-position: -260px -23px;
+	cursor: pointer;
+}
+
+.bannarBox .bannarRight section{
+	width: inherit;
+	position: absolute;
+	top: 40px;
+	left: 0;
+	height: 403px;
+	border-bottom: 1px solid #eeeeee;
+	background: #fff;
+	z-index: 111;
+}
+.bannarBox .bannarRight .rightHeader{
+	height: 44px;
+	line-height: 44px;
+	width: 100%;
+	margin-top: 11px;
+	font-size: 0;
+}
+.bannarBox .bannarRight .rightHeader p{
+	display: inline-block;
+	font-size: 23px;
+	width: 38px;
+	height: 38px;
+	text-align: center;
+	border:2px solid #ff6011;
+	-webkit-border-radius: 100%;
+	-moz-border-radius: 100%;
+	-ms-border-radius: 100%;
+	-o-border-radius: 100%;
+	border-radius: 100%;
+	color: #ff6011;
+	margin-right: 4px;
+	line-height: 38px;
+}
+.bannarBox .bannarRight .rightHeader p:first-child{
+	margin-left: 4px;
+}
+.bannarBox .bannarRight .smallHeader{
+	height: 86px;
+    width: inherit;
+    background: url(../images/bannar6.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-size: 16px;
+    text-indent: 25px;
+}
+.bannarBox .bannarRight .smallHeader h5{	
+	padding-top: 25px;
+}
+.bannarBox .bannarRight .smallHeader p{
+	line-height: 41px;
+}
+.hr1{
+	width: 175px;
+	border: 1px dotted #dddddd;
+	margin:0 auto;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+.bannarBox .bannarRight .rightContent{
+	width: 166px;
+	margin:0 auto;
+}
+.bannarBox .bannarRight .rightContent #box1{
+	width: 166px;
+}
+.bannarBox .bannarRight .rightContent #box1 li{
+	display: inline-block;
+	width: 25%;
+	text-align: center;
+	box-sizing:border-box;
+	border-right: 1px solid #ddd;
+	font-size: 14px;
+	color: #000;
+	cursor: pointer;
+	font-weight: bold;
+}
+.bannarBox .bannarRight .rightContent #box1 li:last-child{
+	border:none;
+}
+.bannarBox .bannarRight .rightContent #box1 .active{
+	color: #ff6600;
+}
+.bannarBox .bannarRight .rightContent #showBox div dl dd{
+	font-size: 12px;
+	line-height: 24px;
+	color: #999999;
+}
+.carousel{
+	width: 100%;
+	height: 403px;
+}
+.startGoods{
+	width: 1190px;
+	margin:0 auto;
+	margin-top: 1px;
+}
+.startGoods ul{
+	margin-left: 251px;
+	width: 939px;
+}
+.startGoods ul li{
+	width: 20%;
+	height: 249px;
+	float: left;
+	box-sizing:border-box;
+	border:1px solid #eeeeee;
+	text-align: center;
+}
+.startGoods ul .active{
+	border:1px solid #a9c69a;
+}
+.startGoods ul li a h5{
+	font-size: 18px;
+	font-weight: bold;
+	margin-top: 20px;
+	margin-bottom: 12px;
+}
+.startGoods ul li a p{
+	font-size: 14px;
+	margin-bottom: 18px;
+}
+.boxMain{
+	width: 1190px;
+	margin: 0 auto;
+	margin-top: 59px;
+}
+.boxMain .title{
+	width: 100%;
+	border-bottom: 2px solid #548d35;
+	height: 36px;
+}
+.boxMain .title h3{
+	float: left;
+	font-size: 22px;
+	margin-bottom: 14px;
+}
+.boxMain .title h3 small{
+	margin-left: 19px;
+	font-size: 14px;
+	color: #999999;
+}
+.boxMain .title p{
+	float: right;
+	margin-top: 11px;
+	font-size: 12px;
+	color: #999999;
+}
+.boxMain section{
+	width: 100%;
+}
+.boxMain section .left{
+	width: 213px;
+	height: 460px;
+	float: left;
+	clear: both;
+	margin: 0 19px 0 11px;
+	box-sizing:border-box;
+}
+.boxMain section .left .brand{
+	width: inherit;
+    height: 115px;
+    background: #ffddcc;
+    padding-top: 24px;
+}
+.boxMain section .left .brand p{
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
+}
+.boxMain section .left .pic{
+	width: 213px;
+	height: 346px;
+}
+.boxMain section .midden{
+	width: 502px;
+	height: 460px;
+	float: left;
+	box-sizing:border-box;
+	font-size: 0;
+}
+.boxMain section .left .pic #owl-demo1 a,
+.boxMain section .left .pic #owl-demo2 a,
+.boxMain section .left .pic #owl-demo3 a,
+.boxMain section .left .pic #owl-demo4 a,
+.boxMain section .left .pic #owl-demo5 a{
+	display: block;
+	width: 70px;
+	height: 70px;
+	margin:0 auto;
+	margin-top: 10px;
+}
+.boxMain section .midden a{
+	display: inline-block;
+	width: 100%;
+	height: 224px;
+	overflow: hidden;
+}
+.boxMain section .midden .img1{
+	margin-bottom: 10px;
+}
+.boxMain section .midden a img{
+	width: 100%;
+	height: 100%;
+}
+.boxMain section .right{
+	float: left;
+	height: 460px;
+	width: 443px;
+	box-sizing:border-box;
+}
+.boxMain section .right ul li{
+	float: left;
+	box-sizing:border-box;
+	width: 211px;
+	width: 201px\0;
+	height: 225px;
+	margin:0px 10px 10px 10px;
+	text-align: center;
+	border:1px solid #e5e5e5;
+}
+.boxMain section .right ul .active{
+	border:2px solid #9cb98d;
+}
+.boxMain section .right ul li:nth-child(even){
+	margin-left: 0;
+	margin-right: 0;
+}
+.boxMain section .right ul li a h5{
+	font-size: 18px;
+	font-weight: bold;
+	color: #333333;
+	margin:19px 0 8px 0;
+}
+.boxMain section .right ul li a p{
+	font-size: 12px;
+	color: #666666;
+	margin-bottom: 27px;
+}
+.boxMain section .midden .img3{
+	width: 100%;
+	height: 100%;
+}
+.boxMain .agriculturalRight{
+	width: 946px;
+	float: left;
+	
+}
+.boxMain .agriculturalRight ul li{
+	float: left;
+	margin-left: 10px;
+	width: 229px;
+	height: 312px;
+	overflow: hidden;
+	position: relative;
+	width: 226px\9;
+}
+.boxMain .agriculturalRight ul li:nth-child(1){
+	margin-left: 0;
+}
+.boxMain .agriculturalRight ul li a div{
+	width: 210px;
+	height: 80px;
+	background: rgba(255,255,255,0.8);
+	background: url(../images/goods4bj.png) no-repeat\9;
+	position: absolute;
+	left: 10px;
+	bottom: 10px;
+	text-align: center;
+}
+.boxMain .agriculturalRight ul li a div h5{
+	font-size: 24px;
+	font-weight: bold;
+	margin:19px 0 6px 0;
+}
+.boxMain .agriculturalRight ul li a div p{
+	font-size: 14px;
+	color: #666666;
+}
+#leftbar{
+	width: 50px;
+	height: 306px;
+	border-radius: 5px;
+	background: #548d35;
+	text-align: center;
+	margin-left: 200px;
+	position: absolute;
+	top: 2px;
+	left: -273px;
+}
+#leftbar ul li{
+	width: 100%;
+	height: 61px;
+	position: relative;
+	font-size: 18px;
+}
+#leftbar ul li .z1{
+	width: 100%;
+	height: 60px;
+	border-bottom: 1px solid #fff;
+}
+#leftbar ul li .z1 p{
+	padding-top: 6px;
+
+}
+#leftbar ul li .z1 img{
+	display: block;
+	width: 19px;
+	height: 19px;
+	margin: 0 auto;
+}
+#leftbar ul li .z2{
+	position: absolute;
+	width: 93%;
+	height: 99%;
+	top: 1px;
+	left: 1px;
+	background: #fff;
+	font-size: 16px;
+    border: 1px solid #548d35;
+    display: none;
+    color: #548d35;
+}
+
+#leftbar ul li .z2 p:nth-child(1){
+	padding-top: 10px;
+}
+#leftbar a {
+	color: #fff;
+}
