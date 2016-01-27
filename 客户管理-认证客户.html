@@ -7,8 +7,6 @@
 	<link rel="stylesheet" href="css/common.css" type="text/css">
 	<link rel="stylesheet" href="css/seller.css" type="text/css">
 	<script type="text/javascript" src="js/jquery.1.11.3.min.js"></script>
-	<script type="text/javascript" src="js/laydate.js"></script>
-	<script type="text/javascript" src="js/layer.js"></script>
 	<!--[if IE]> 
 	<script> 
 	(function(){if(!/*@cc_on!@*/0)return;var e = "header,footer,nav,article,section".split(','),i=e.length;while(i--){document.createElement(e[i])}})() 
@@ -201,13 +199,13 @@
 				<h4>卖家中心</h4>
 				<dl>
 					<dt>交易管理</dt>
-					<dd><a href="" class="green">已卖出的商品</a></dd>
+					<dd><a href="">已卖出的商品</a></dd>
 					<dd><a href="">评价管理</a></dd>
 				</dl>
 				<dl>
 					<dt>商品管理</dt>
 					<dd><a href="">发布商品</a></dd>
-					<dd><a href="">出售中的商品</a></dd>
+					<dd><a href="" class="green">出售中的商品</a></dd>
 					<dd><a href="">仓库中的商品</a></dd>
 					<dd><a href="">商品分类管理</a></dd>
 				</dl>
@@ -249,100 +247,221 @@
 					<span>&gt;</span>
 					<a href="">卖家中心</a>
 					<span>&gt;</span>
-					<a href="">运费模版</a>
+					<a href="">认证客户</a>
 				</div> <!-- 所在位置结束 -->
-				<div class="rightCont" style="min-height: 485px;"> <!-- 右边的正文内容 -->
-					<h3>运费模版</h3>
-					<h2 class="freightTemplate-title">新增运费模版，选择是否包邮，填写相对应的价格</h2>
-					<!-- 模板内容 -->
-					<form action="" method="" class="freightTemplate-box">
-						<div class="freightTemplate-list1">
-							<label for="">模板名称：</label>
-							<input type="text" placeholder="您可以按照物品重量和体积来命名，如:小于一公斤的物品" class="templateName">
-						</div>
-						<div class="freightTemplate-list1">
-							<label for="">计价方式：</label>
+				<div class="rightCont"> <!-- 右边的正文内容开始 -->
+					<h3>认证客户</h3>
+					<!-- 右边内容输入框，按钮 -->
+					<form action="" method="" class="approveClientele-box">
+						<div>
+							<label for="">所在区域：</label>
 							<select name="" id="">
-								<option value="">重量</option>
-								<option value="">体积</option>
+								<option value="">浙江省</option>
+								<option value="">上海市</option>
+							</select>
+							<select name="" id="">
+								<option value="">浙江省</option>
+								<option value="">上海市</option>
+							</select>
+							<select name="" id="">
+								<option value="">浙江省</option>
+								<option value="">上海市</option>
+							</select>
+							<label for="" class="approveClientele-label">客户级别：</label>
+							<select name="" id="">
+								<option value="">浙江省</option>
+								<option value="">上海市</option>
+							</select>
+							<span class="green approveClientele-change">编辑</span>
+							<label for="">当前状态：</label>
+							<select name="" id="">
+								<option value="">新申请</option>
+								<option value="">后申请</option>
 							</select>
 						</div>
-						<div class="freightTemplate-list1">
-							<label for="">是否包月：</label>
-							<select name="" id="">
-								<option value="">是</option>
-								<option value="">否</option>
-							</select>
+						<div>
+							<label for="">申请时间：</label>
+							<input type="text" name="" id="">
+							<span>-</span>
+							<input type="text" name="" id="">
+							<input type="button" value="搜索" class="approveClientele-btn">
 						</div>
-						<div class="freightTemplate-list1">
-							<label for="">配送费用：</label><span>除指定地区外，其他地区的费用采用"默认运费"</span>
+					</form>	
+					<!-- 认证客户开始 -->
+					<div class="approveClientele-content">
+						<ul class="ul1">
+							<li class="active">新申请<span>(2)</span></li>
+							<li>审核中<span>(47)</span></li>
+							<li>审核通过<span>(316)</span></li>
+							<li>审核拒绝<span>(1)</span></li>
+							<li>终止<span>(9)</span></li>
+						</ul>
+						<div id="showbox">
+							<div class="show">
+								<table>
+									<tr style="border:1px solid #e5e5e5;">
+										<th style="width: 115px;">申请时间</th>
+										<th style="width: 164px;">申请人</th>
+										<th style="width: 130px;">会员号</th>
+										<th style="width: 174px;">所在地区</th>
+										<th style="width: 150px;">客户级别</th>
+										<th style="width: 128px;">操作</th>
+									</tr>
+									<tr>
+										<td>2015-06-04</td>
+										<td>王世聪</td>
+										<td>11111111222233442</td>
+										<td>浙江省杭州市萧山区</td>
+										<td>零售商3</td>
+										<td class="recovery">恢复</td>
+									</tr>
+									<tr>
+										<td>2015-06-04</td>
+										<td>王世聪</td>
+										<td>11111111222233442</td>
+										<td>浙江省杭州市萧山区</td>
+										<td>零售商</td>
+										<td class="recovery">恢复</td>
+									</tr>
+								</table>
+							</div>
+							<div class="hide">
+								<table>
+									<tr style="border:1px solid #e5e5e5;">
+										<th style="width: 115px;">申请时间</th>
+										<th style="width: 164px;">申请人</th>
+										<th style="width: 130px;">会员号</th>
+										<th style="width: 174px;">所在地区</th>
+										<th style="width: 150px;">客户级别</th>
+										<th style="width: 128px;">操作</th>
+									</tr>
+									<tr>
+										<td>2015-06-04</td>
+										<td>王世聪</td>
+										<td>11111111222233442</td>
+										<td>浙江省杭州市萧山区</td>
+										<td>零售商4</td>
+										<td class="recovery">恢复</td>
+									</tr>
+									<tr>
+										<td>2015-06-04</td>
+										<td>王世聪</td>
+										<td>11111111222233442</td>
+										<td>浙江省杭州市萧山区</td>
+										<td>零售商</td>
+										<td class="recovery">恢复</td>
+									</tr>
+								</table>
+							</div>
+							<div class="hide">
+								<table>
+									<tr style="border:1px solid #e5e5e5;">
+										<th style="width: 115px;">申请时间</th>
+										<th style="width: 164px;">申请人</th>
+										<th style="width: 130px;">会员号</th>
+										<th style="width: 174px;">所在地区</th>
+										<th style="width: 150px;">客户级别</th>
+										<th style="width: 128px;">操作</th>
+									</tr>
+									<tr>
+										<td>2015-06-04</td>
+										<td>王世聪</td>
+										<td>11111111222233442</td>
+										<td>浙江省杭州市萧山区</td>
+										<td>零售商5</td>
+										<td class="recovery">恢复</td>
+									</tr>
+									<tr>
+										<td>2015-06-04</td>
+										<td>王世聪</td>
+										<td>11111111222233442</td>
+										<td>浙江省杭州市萧山区</td>
+										<td>零售商</td>
+										<td class="recovery">恢复</td>
+									</tr>
+								</table>
+							</div>
+							<div class="hide">
+								<table>
+									<tr style="border:1px solid #e5e5e5;">
+										<th style="width: 115px;">申请时间</th>
+										<th style="width: 164px;">申请人</th>
+										<th style="width: 130px;">会员号</th>
+										<th style="width: 174px;">所在地区</th>
+										<th style="width: 150px;">客户级别</th>
+										<th style="width: 128px;">操作</th>
+									</tr>
+									<tr>
+										<td>2015-06-04</td>
+										<td>王世聪</td>
+										<td>11111111222233442</td>
+										<td>浙江省杭州市萧山区</td>
+										<td>零售商</td>
+										<td class="recovery">恢复</td>
+									</tr>
+									<tr>
+										<td>2015-06-04</td>
+										<td>王世聪</td>
+										<td>11111111222233442</td>
+										<td>浙江省杭州市萧山区</td>
+										<td>零售商</td>
+										<td class="recovery">恢复</td>
+									</tr>
+								</table>
+							</div>
+							<div class="hide">
+								<table>
+									<tr style="border:1px solid #e5e5e5;">
+										<th style="width: 115px;">申请时间</th>
+										<th style="width: 164px;">申请人</th>
+										<th style="width: 130px;">会员号</th>
+										<th style="width: 174px;">所在地区</th>
+										<th style="width: 150px;">客户级别</th>
+										<th style="width: 128px;">操作</th>
+									</tr>
+									<tr>
+										<td>2015-06-04</td>
+										<td>王世聪</td>
+										<td>11111111222233442</td>
+										<td>浙江省杭州市萧山区</td>
+										<td>零售商6</td>
+										<td class="recovery">恢复</td>
+									</tr>
+									<tr>
+										<td>2015-06-04</td>
+										<td>王世聪</td>
+										<td>11111111222233442</td>
+										<td>浙江省杭州市萧山区</td>
+										<td>零售商</td>
+										<td class="recovery">恢复</td>
+									</tr>
+								</table>
+							</div>
 						</div>
-						<div class="freightTemplate-list1  freightTemplate-default">
-							<label for="">默认费用：</label>
-							<input type="text" name="" id="">
-							<span >KG内</span>
-							<input type="text" name="" id="">
-							<span>元，</span>
-							<span>每增加，</span>
-							<input type="text" name="" id="">
-							<span>KG内，运费增加</span>
-							<input type="text" name="" id="">
-							<span>元</span>
-						</div>
-						<button class="freightTemplate-btn">保存</button>
-					</form>
-					<!-- 模板内容结束 -->
-				</div>
-				<!-- 编辑模版 -->
-				<div class="rightCont freightTemplate-bottom" style="min-height: 485px;">
-					<div class="freightTemplate-bottomTitle"><input type="checkbox" name="" id=""><span>全选</span><input type="button" value="批量删除"></div>
-					<table>
-						<tr style="border:1px solid #e5e5e5;">
-							<th style="width: 117px;">模版名称</th>
-							<th style="width: 130px;">配送区域</th>
-							<th style="width: 122px;">运费承担方</th>
-							<th style="width: 90px;">首重(kg)</th>
-							<th style="width: 90px;">运费(元)</th>
-							<th style="width: 90px;">续重(kg)</th>
-							<th style="width: 90px;">运费(kg)</th>
-							<th style="width: 95px;">操作</th>
-							<th style="width: auto;"></th>
-						</tr>
-						<tr>
-							<td class="td1">
-								<input type="checkbox" name="" id=""><span>全国免运费</span>
-							</td>
-							<td>全国，港澳台除外</td>
-							<td>买方</td>
-							<td>1</td>
-							<td>6.00</td>
-							<td>1</td>
-							<td>3.00</td>
-							<td>
-								<a href="" class="orange">编辑</a>
-								<a href="" class="orange">删除</a>
-							</td>
-							<td>设置默认</td>
-						</tr>
-						<tr>
-							<td class="td1">
-								<input type="checkbox" name="" id=""><span>全国免运费</span>
-							</td>
-							<td>全国，港澳台除外</td>
-							<td>买方</td>
-							<td>1</td>
-							<td>6.00</td>
-							<td>1</td>
-							<td>3.00</td>
-							<td>
-								<a href="" class="orange">编辑</a>
-								<a href="" class="orange">删除</a>
-							</td>
-							<td>设置默认</td>
-						</tr>
-					</table>	
-				</div>
-				<!-- 编辑模版结束 -->
+					</div>
+					<!-- 认证客户结束 -->
+				</div><!-- 右边的正文内容结束 -->
+				<div class="pageBox"> <!-- 分页开始 -->
+					<dl>
+						<dd><a href=""><</a></dd>
+						<dd ><a href="">1</a></dd>
+						<dd class="active"><a href="">2</a></dd>
+						<dd><a href="">3</a></dd>
+						<dd><a href="">4</a></dd>
+						<dd><a href="">5</a></dd>
+						<dd><a href="">6</a></dd>
+						<dd>...</dd>
+						<dd><a href="">33</a></dd>
+						<dd><a href="">34</a></dd>
+						<dd><a href="">></a></dd>
+						<dd class="pageBtn">
+							<p>到第
+								<input type="text" name="" id="" value="15">页
+								<input type="button" value="确定">
+							</p>
+						</dd>
+					</dl>
+				</div><!-- 分页结束 -->
 			</div>
 		</div>
 	</section><!-- 主体内容结束 -->
@@ -399,5 +518,19 @@
 			<p>增值电信业务经营许可证:浙B2-20150086</p>
 		</section> 
 	</footer><!-- 脚部结束 -->
+<script type="text/javascript">
+	$(function(){
+		// 区域商铺的显示隐藏
+		$(".shopTitle").click(function(){
+			$(".shopContent").toggle(function(){});
+		});
+	// tab切换
+	$(".approveClientele-content ul li").on('click',function(){
+			$(this).addClass('active').siblings().removeClass('active');
+			$('#showbox>div:eq('+$(this).index()+')').show().siblings().hide();
+		})
+	// tab切换结束	
+	})
+</script>
 </body>
 </html>

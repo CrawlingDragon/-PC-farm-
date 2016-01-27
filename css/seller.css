@@ -79,7 +79,6 @@
 	height: 30px;
 	background: #f5f8fa;
 	text-align: center;
-	margin-left: 30px;
 	text-indent: 0;
 }
 .rightPart .tableBox .tr1 dd{
@@ -90,7 +89,7 @@
 }
 .rightPart .tableBox .listBox{
 	text-indent: 0;
-	margin:20px 0 15px 30px;
+	margin:20px 0 15px 0px;
 }
 .rightPart .tableBox .listBox h4 {
 	display: block;
@@ -808,7 +807,7 @@
 }
 .goods-selling-table{
 	width: 935px;
-	margin-left: 30px;
+	/*margin-left: 30px;*/
 	margin-top: 10px;
 }
 .goods-selling-table tr{
@@ -1159,9 +1158,261 @@
 	display: inline-block;
 	width: 143px;
 	text-align: right;
+	margin-right: 10px;
 }
 .rightPart .rightCont .storeSettings-box input[type=text]{
 	display: inline-block;
 	width: 450px;
 	height: 35px;
+}
+.storeSettings-box .storeSettings-list1{
+	margin-top: 20px;
+}
+.storeSettings-box .storeSettings-list1 .storeSettings-list1Logo{
+	vertical-align: top;
+}
+.photosBox{
+	display: inline-block;
+	margin-left: -7px;
+	font-size: 12px;
+	color: #666;
+}
+.photosBox .photos{
+	display: inline-block;
+	width: 130px;
+	height: 130px;
+	border:1px solid #ddd;
+	padding-top: 43px;
+    box-sizing: border-box;
+    text-align: center;
+    cursor: pointer;
+    margin-right: 30px;
+}
+.photosBox h5{
+	font-weight: normal;
+	font-size: 12px;
+	color: #d1d1d1;
+	margin-top: 10px;
+}
+.storeSettings-box .storeSettings-list1 textarea{
+	display: inline-block;
+	width: 450px;
+	height: 130px;
+	max-width: 450px;
+	max-height: 130px;
+	padding-top: 10px;
+}
+.storeSettings-box .storeSettingsBtn{
+	display: inline-block;
+	width: 110px;
+	height: 50px;
+	font-size: 16px;
+	color: #fff;
+	background: #579425;
+	font-weight: bolder;
+	margin:50px 0 0 155px;
+	border:none;
+}
+/*店铺管理-运费模版*/
+.freightTemplate-title{
+	font-size: 14px;
+	color: #ff6600;
+	margin:10px 0 20px 30px;
+	font-weight: normal;
+}
+.freightTemplate-box .freightTemplate-list1{
+	margin-bottom: 20px;
+}
+.freightTemplate-box .freightTemplate-list1 label{
+	display: inline-block;
+	width: 160px;
+	text-align: right;
+}
+.freightTemplate-box .freightTemplate-list1 select{
+	display: inline-block;
+	width: 95px;
+	height: 35px;
+	border:1px solid #e5e5e5;
+	padding-left: 10px;
+	box-sizing:border-box;
+}
+.freightTemplate-box .freightTemplate-list1 span{
+	font-size: 12px;
+	color: #333;
+	margin-left: 8px;
+}
+.freightTemplate-box .freightTemplate-list1 .templateName{
+	display: inline-block;
+	width: 455px;
+	height: 35px;
+}
+.freightTemplate-box  input[type=text]{
+	display: inline-block;
+	border:1px solid #e5e5e5;
+	width: 95px;
+	height: 35px;
+}
+.freightTemplate-box .freightTemplate-default span{
+	color: #666;
+	font-size: 12px;
+}
+.freightTemplate-box .freightTemplate-btn{
+	display: inline-block;
+	width: 110px;
+	height: 50px;
+	font-size: 16px;
+	color: #fff;
+	text-align: center;
+	line-height: 50px;
+	margin-left: 150px;
+	background: #579425;
+	font-weight: bolder;
+	margin:50px 0 0 92px;
+	border:none;
+}
+.freightTemplate-bottom{
+	padding:20px 0px 0px 20px;
+	margin-top: 20px;
+	box-sizing:border-box;
+}
+.freightTemplate-bottom .freightTemplate-bottomTitle{
+	margin:0px 0 10px 10px;
+}
+.freightTemplate-bottom .freightTemplate-bottomTitle span{
+	font-size: 12px;
+	color: #666;
+}
+.freightTemplate-bottom .freightTemplate-bottomTitle input[type=button]{
+	background: #fff;
+	width: 70px;
+	height: 25px;
+	line-height: 25px;
+	font-size: 12px;
+	font-weight: bolder;
+	color: #666;
+	border:1px solid #e5e5e5;
+	margin-left: 10px;
+}
+.freightTemplate-bottom input[type=checkbox]{
+	display: inline-block;
+	margin-right: 10px;
+	vertical-align: middle;
+}
+.freightTemplate-bottom table{
+	width: 938px;
+}
+.freightTemplate-bottom table tr{
+
+}
+.freightTemplate-bottom table tr th{
+	height: 35px;
+	line-height: 35px;
+	background: #f5f8fa;
+	text-align: center;
+	font-size: 12px;
+	color: #666;
+	font-weight: bolder;
+	box-sizing:border-box;
+}
+.freightTemplate-bottom table tr td{
+	font-size: 12px;
+	color: #333;
+	text-align: center;
+	height: 63px;
+	border-bottom:1px solid #e5e5e5;
+}
+.freightTemplate-bottom table tr td a{
+	display: inline-block;
+	width: 100%;
+	margin-top: 5px;
+}
+.freightTemplate-bottom table tr:last-child td{
+	border:none;
+}
+.freightTemplate-bottom table tr .td1{
+	text-align: left;
+	text-indent: 10px;
+}
+/*客户管理-认证客户*/
+.approveClientele-box>div{
+	margin:10px 0 15px;
+}
+.approveClientele-box select{
+	display: inline-block;
+	margin-right: 5px;
+	width: 80px;
+	height: 25px;
+	border:1px solid #e5e5e5;
+}
+.approveClientele-box .approveClientele-label{
+	margin-left: 40px;
+}
+.approveClientele-box .approveClientele-change{
+	font-size: 12px;
+	margin:0 50px 0 -2px;
+	cursor: pointer;
+}
+.approveClientele-box input[type=text]{
+	display: inline-block;
+	font-size: 12px;
+	color: #d1d1d1;
+	width: 120px;
+	height: 22px;
+	line-height: 22px;
+}
+.approveClientele-box .approveClientele-btn{
+	display: inline-block;
+	font-size: 14px;
+	color: #fff;
+	background: #589423;
+	width: 70px;
+	height: 32px;
+	border:none;
+	line-height: 32px;
+	margin:0 0 0 50px;
+}
+.approveClientele-content{
+	margin-top: 50px;
+	padding-left: 20px;
+	box-sizing:border-box;
+}
+.approveClientele-content .ul1 li{
+	display: inline-block;
+	padding:0 29px 0 29px;
+	height: 50px;
+	line-height: 50px;
+	font-size: 14px;
+	color: #333;
+	font-weight: bolder;
+}
+.approveClientele-content .ul1 li.active{
+	border:1px solid #e5e5e5;
+	border-bottom: 2px solid #fff;
+	border-top: 2px solid #589425;
+	color: #589425;
+}
+.approveClientele-content #showbox{
+	margin-top: -2px
+}
+.approveClientele-content #showbox table{
+	width: 945px;
+}
+.approveClientele-content #showbox table tr th{
+	height: 35px;
+	line-height: 35px;
+	font-size: 14px;
+	color: #666;
+}
+.approveClientele-content #showbox table tr td{
+	text-align: center;
+	height: 43px;
+	font-size: 12px;
+	color: #333;
+	border-bottom: 1px solid #e5e5e5;
+}
+.approveClientele-content #showbox table tr .recovery{
+	color: #ff6600;
+	font-size: 14px;
+	font-weight: bolder;
+	cursor: pointer;
 }
