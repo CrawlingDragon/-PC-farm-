@@ -42,10 +42,10 @@ label{
 	font-size: 14px;
 	color: #666666;
 }
-input[type=text]{
+input[type=text],select{
 	border: 1px solid #e5e5e5;
 }
-input[type=text],textarea{
+input[type=text],textarea,select{
 	padding-left: 5px;
 	box-sizing:border-box;
 }
