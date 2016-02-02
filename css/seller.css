@@ -1841,3 +1841,223 @@
 	height: 50px;
 	margin:30px 0 0 200px;
 }
+/*我的财富-余额提现*/
+.balanceWithdraw form>div{
+	margin-bottom: 20px;
+}
+.balanceWithdraw form>div .balanceWithdraw-num{
+	font-size: 25px;
+	font-family: '黑体';
+
+}
+.balanceWithdraw form label{
+	display: inline-block;
+	width: 195px;
+	text-align: right;
+
+}
+.balanceWithdraw form select{
+	display: inline-block;
+	width: 110px;
+	height: 35px;
+	line-height: 35px;
+
+}
+.balanceWithdraw form input[type=text]{
+	display: inline-block;
+	height: 35px;
+	width: 250px;
+}
+.balanceWithdraw .balanceWithdraw-btn{
+	display: inline-block;
+	width: 110px;
+	height: 50px;
+	margin:30px 0 0 202px;
+	line-height: 50px;
+}
+/*我的财富-充值详情*/
+.rechargeDetails{
+	display: block;
+}
+.rechargeDetails .rechargeDetails-H2{
+	height: 65px;
+	line-height: 65px;
+	border: 1px solid #e5e5e5;
+	padding-left: 50px;
+	box-sizing:border-box;
+	margin-top: 10px;
+}
+.rechargeDetails table{
+	width: 100%;
+	border:1px solid #e5e5e5;
+	border-top: none;
+	border-bottom: none;
+}
+.rechargeDetails table tr th{
+	height: 35px;
+	background: #f5f8fa;
+	font-size: 12px;
+	color: #666;
+}
+.rechargeDetails table tr td{
+	text-align: center;
+	height: 55px;
+	border-bottom:1px solid #e5e5e5;
+}
+.rechargeDetails .rechargeDetails-times{
+	border:1px solid #e5e5e5;
+	border-top: none;
+	height: 35px;
+	line-height: 35px;
+	width: 100%;
+}
+.rechargeDetails .rechargeDetails-times span{
+	margin-left: 52px;
+	font-size: 12px;
+	color: #999;
+}
+.rechargeDetails .rechargeDetails-times span i{
+	font-style: normal;
+	margin-left: 10px;
+}
+/*我的财富-订单详情*/
+.wealthOrderDetails{
+	display: block;
+}
+.wealthOrderDetails .wealthOrderDetails-head{
+	width: 1190px;
+	height: 295px;
+	border:1px solid #e5e5e5;
+	background: #f5f8fa;
+	padding-left: 50px;
+	box-sizing:border-box;
+	margin-top: 10px;
+}
+.wealthOrderDetails .wealthOrderDetails-head h2{
+	font-size: 14px;
+	margin:20px 0;
+}
+.wealthOrderDetails .wealthOrderDetails-head .wealthOrderDetails-headBar{
+	margin:0 0 0 75px;
+}
+.wealthOrderDetails .wealthOrderDetails-head .wealthOrderDetails-headBar p span{
+	font-size: 12px;
+	color: #666;
+	margin-right: 159px;
+}
+.wealthOrderDetails .wealthOrderDetails-head .wealthOrderDetails-headBar .wealthOrderDetails-headBarbg{
+	width: 875px;
+    height: 33px;
+    background: url(../images/orderbg.png) no-repeat;
+    margin: 10px 0 20px 12px;
+}
+.wealthOrderDetails-head .wealthOrderDetails-headBartimes span{
+	font-size: 12px;
+	color: #999;
+	margin-right: 110px;
+	margin-left: -23px;
+}
+.wealthOrderDetails .wealthOrderDetails-times{
+	font-size: 12px;
+	color: #333;
+	margin-top: 40px;
+}
+.wealthOrderDetails .wealthOrderDetails-times span{
+	font-weight: bolder;
+	color: #ff6600;
+	margin:0 5px;
+}
+.wealthOrderDetails .wealthOrderDetails-confirm{
+	margin-top: 20px;
+	font-size: 12px;
+}
+.wealthOrderDetails .wealthOrderDetails-confirm a{
+	display: inline-block;
+	width: 100px;
+	height: 35px;
+	border:1px solid #579423;
+	text-align: center;
+	line-height: 35px;
+	margin-left: 20px;
+}
+.wealthOrderDetails .wealthOrderDetails-mid{
+	width: 100%;
+	height: 200px;
+	border:1px solid #e5e5e5;
+	margin-top: 20px;
+	font-size: 12px;
+	color: #333;
+}
+.wealthOrderDetails .wealthOrderDetails-mid>div{
+	width: 50%;
+	float: left;
+	padding:30px 0 0 50px;
+	box-sizing:border-box;
+	position: relative;
+}
+.wealthOrderDetails .wealthOrderDetails-mid div:first-child:after{
+	content: '';
+	width: 1px;
+	height: 163px;
+	position: absolute;
+	right: 0;
+	top: 20px;
+	background: #e5e5e5;
+}
+.wealthOrderDetails .wealthOrderDetails-mid>div h4{
+	font-size: 14px;
+	margin-bottom: 25px;
+}
+.wealthOrderDetails .wealthOrderDetails-mid>div p{
+	line-height: 23px;
+}
+.wealthOrderDetails .wealthOrderDetails-title{
+	margin-top: 10px;
+	width: 1193px;
+	border: 1px solid #e5e5e5;
+	font-weight: bolder;
+	font-size: 14px;
+	box-sizing:border-box;
+	padding: 30px 0 20px 50px;
+	border-bottom: none;
+}
+.wealthOrderDetails table{
+	width: 1193px;
+	font-size: 12px;
+	color: #333;
+}
+.wealthOrderDetails table tr{
+	/*border-bottom: 1px solid #e5e5e5;*/
+}
+.wealthOrderDetails table tr th{
+	height: 35px;
+	font-size: 12px;
+	color:#666;
+	background: #f4f7f7;
+}
+.wealthOrderDetails table tr td{
+	text-align: center;
+	border:1px solid #e5e5e5;
+}
+.wealthOrderDetails table tr td .imgs{
+	width: 75px;
+	height: 75px;
+	margin: 0 auto;
+	border:1px solid #e5e5e5;
+}
+.wealthOrderDetails table tr td .imgs img{
+	width: 100%;
+	height: 100%;
+}
+.wealthOrderDetails table tr td p{
+	height: 100px;
+	line-height: 101px;
+	border-bottom: 1px solid #e5e5e5;
+}
+.wealthOrderDetails table tr td p:last-child{
+	border-bottom:none;
+}
+.wealthOrderDetails table tr td.tableTxt{
+	padding:0 5px;
+	box-sizing:border-box;
+}
