@@ -1,4 +1,4 @@
-﻿.rightPart .rightCont h3{
+.rightPart .rightCont h3{
 	font-size: 14px;
 	font-weight: bold;
 	text-indent: 33px;
@@ -1800,6 +1800,7 @@
 	text-align: center;
 	font-size: 14px;
 	font-weight: bolder;
+	cursor: pointer;
 }
 .Editbankcard form>div{
 	margin-bottom: 20px;
@@ -1840,6 +1841,10 @@
 	width: 110px;
 	height: 50px;
 	margin:30px 0 0 200px;
+}
+.Editbankcard .protocol{
+	display: block;
+	margin: 10px 197px;
 }
 /*我的财富-余额提现*/
 .balanceWithdraw form>div{
@@ -2060,4 +2065,222 @@
 .wealthOrderDetails table tr td.tableTxt{
 	padding:0 5px;
 	box-sizing:border-box;
+}
+/*账户管理-我的财富-账户设置*/
+#accountSettings #box1 ul li{
+	float: left;
+	font-size: 16px;
+	font-weight: bolder;
+	border:1px solid #e5e5e5;
+	border-bottom: none;
+	width: 145px;
+	height: 45px;
+	text-align: center;
+	line-height: 45px;
+	margin-right: 20px;
+	cursor: pointer;
+}
+#accountSettings #box1 ul li.active{
+	border-top: 2px solid #ec651a;
+	color: #ec651a;
+	border-bottom: 1px solid #fff;
+	margin-bottom: -1px;
+}
+#accountSettings .showbox .showCont{
+	border: 1px solid #e5e5e5;
+	padding-bottom: 20px;
+}
+#accountSettings .showbox .showCont form{
+	padding-left: 20px;
+	padding-bottom: 26px;
+	padding-right: 10px;
+	width: 100%;
+	box-sizing:border-box;
+}
+#accountSettings .showbox .showCont .safebox form>div{
+	height: 55px;
+	line-height: 55px;
+	border-bottom: 1px solid #e5e5e5;
+	font-size: 14px;
+	font-weight: bolder;
+}
+#accountSettings .showbox .showCont .safebox form>div span{
+	font-size: 12px;
+	font-weight: bolder;
+	margin:0 50px 0 10px;
+	cursor: pointer;
+}
+#accountSettings .showbox .showCont .safebox form>div input{
+	border:none;
+	background: #fff;
+	display: inline-block;
+	height: 30px;
+}
+#accountSettings .shippingAddress .shippingAddress-title{
+	margin:30px 0 20px 30px;
+	font-size: 14px;
+	font-weight: bolder;
+}
+#accountSettings .shippingAddress .shippingAddress-title span{
+	color: #333;
+	margin-left: 10px;
+	font-weight: normal;
+}
+#accountSettings .shippingAddress form div{
+	margin-bottom: 20px;
+}
+#accountSettings .shippingAddress form label{
+	display: inline-block;
+	width: 154px;
+	text-align: right;
+}
+#accountSettings .shippingAddress form select{
+	display: inline-block;
+	width: 100px;
+	height: 35px;
+}
+#accountSettings .shippingAddress form textarea{
+	width: 450px;
+	height: 85px;
+	max-width: 450px;
+	max-height: 85px;
+	border-color: #e5e5e5;
+	padding-top: 10px;
+	padding-left: 10px;
+	box-sizing:border-box;
+}
+#accountSettings .shippingAddress form textarea::-webkit-input-placeholder{
+	font-size: 12px;
+}
+#accountSettings .shippingAddress form input[type=text]{
+	display: inline-block;
+	width: 340px;
+	height: 35px;
+	text-indent: 10px;
+}
+#accountSettings .shippingAddress form .defalut{
+	margin:10px 0 0 162px;
+	font-size: 12px;
+	color: #333;
+}
+#accountSettings .shippingAddress form .defalut input[type=checkbox]{
+	vertical-align: middle;
+	margin-top: -2px;
+}
+#accountSettings .shippingAddress form .adsBtns{
+	width: 110px;
+	height: 50px;
+	line-height: 50px;
+	margin:50px 0 51px 162px;
+}
+#accountSettings .shippingAddress .hr{
+	border-top: 1px solid #e5e5e5;
+	width: 90%;
+	margin:0 auto;
+}
+#accountSettings .shippingAddress .saveAddress-title{
+	margin:30px;
+	font-weight: bolder;
+}
+#accountSettings .shippingAddress .saveAddress-titleBtn{
+	margin-left: 30px;
+	margin-bottom: 10px;
+}
+#accountSettings .shippingAddress .saveAddress-titleBtn input[type=button]{
+	display: inline-block;
+	width: 70px;
+	height: 23px;
+	background: #fff;
+	border:1px solid #e5e5e5;
+	font-size: 12px;
+	vertical-align: bottom;
+	margin-left: 5px;
+}
+#accountSettings .shippingAddress table{
+	width: 945px;
+	margin:0 auto;
+}
+#accountSettings .shippingAddress table tr{
+
+}
+#accountSettings .shippingAddress table tr th{
+	height: 35px;
+	font-size: 12px;
+}
+#accountSettings .shippingAddress table tr td{
+	text-align: center;
+	height: 77px;
+	border-bottom: 1px solid #e5e5e5;
+	font-size: 12px;
+}
+#accountSettings .shippingAddress table tr:last-child td{
+	border-bottom: none;
+}
+#accountSettings .shippingAddress table tr td .btns{
+	display: block;
+	color: #ff6600;
+	font-size: 12px;
+	line-height: 20px;
+}
+#accountSettings .shippingAddress table tr td a.default{
+	color: #333;
+}
+#accountSettings .corporate dl{
+	display: block;
+	width: 902px;
+	margin:0 auto;
+}
+#accountSettings .corporate dl dd{
+	width: 100%;
+	height: 44px;
+	border-bottom: 1px dotted #e3e3e3;
+	line-height: 44px;
+	font-size: 14px;
+	color: #333;
+}
+#accountSettings .corporate dl dd span{
+	display: inline-block;
+	width: 115px;
+	text-align: right;
+	margin-right: 10px;
+	color: #666;
+}
+#accountSettings .corporate dl dd .setBtns{
+	display: inline-block;
+	float: right;
+	color: #589325;
+	cursor: pointer;
+}
+#accountSettings .corporate dl dd .imgs{
+	display: inline-block;
+}
+#accountSettings .corporate dl dd i{
+	font-style: normal;
+}
+/*安全问题设置*/
+#securitySettings .securitySettings-title{
+	margin:0 0 20px 20px;
+	color: #589325;
+	font-size: 14px;
+}
+#securitySettings form>div{
+	margin-bottom: 20px;
+}
+#securitySettings form label{
+	display: inline-block;
+	width: 195px;
+	text-align: right;
+	height: 33px;
+}
+#securitySettings form select,#securitySettings form input[type=text]{
+	display: inline-block;
+	width: 250px;
+	height: 33px;
+}
+#securitySettings .securitySettings-btns{
+	display: inline-block;
+	width: 110px;
+	height: 50px;
+	line-height: 50px;
+	margin:25px 0 0 231px;
 }

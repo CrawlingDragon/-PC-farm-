@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
@@ -7,11 +7,6 @@
 	<link rel="stylesheet" href="css/common.css" type="text/css">
 	<link rel="stylesheet" href="css/seller.css" type="text/css">
 	<script type="text/javascript" src="js/jquery.1.11.3.min.js"></script>
-	<script type="text/javascript" charset="utf-8" src="UED/ueditor.config.js"></script>
-	<!-- 编辑器源码文件 -->
-	<script type="text/javascript"  charset="utf-8" src="UED/ueditor.all.min.js"></script>
-	<script type="text/javascript" charset="utf-8" src="UED/lang/zh-cn.js"></script>
-    <!-- 实例化编辑器 -->
 	<!--[if IE]> 
 	<script> 
 	(function(){if(!/*@cc_on!@*/0)return;var e = "header,footer,nav,article,section".split(','),i=e.length;while(i--){document.createElement(e[i])}})() 
@@ -200,130 +195,105 @@
 
 	<section class="container"><!-- 主体内容开始 -->
 		<div class="containerBox clear">
-			<article class="wealthOrderDetails">
-				<!-- 当前位置开始 -->
-				<div class="current">
+			<div class="leftPart"> <!-- 左边导航公共部分开始 -->
+				<h4>卖家中心</h4>
+				<dl>
+					<dt>交易管理</dt>
+					<dd><a href="">已卖出的商品</a></dd>
+					<dd><a href="">评价管理</a></dd>
+				</dl>
+				<dl>
+					<dt>商品管理</dt>
+					<dd><a href="">发布商品</a></dd>
+					<dd><a href="" class="green">出售中的商品</a></dd>
+					<dd><a href="">仓库中的商品</a></dd>
+					<dd><a href="">商品分类管理</a></dd>
+				</dl>
+				<dl>
+					<dt>店铺管理</dt>
+					<dd><a href="">查看我的商铺</a></dd>
+					<dd><a href="">商铺设置</a></dd>
+					<dd><a href="">掌柜推荐</a></dd>
+					<dd><a href="">运费模板</a></dd>
+					<dd><a href="">子账号设置</a></dd>
+				</dl>
+				<dl>
+					<dt进货渠道</dt>
+					<dd><a href="" >我代理的</a></dd>
+					<dd><a href="">代理我的</a></dd>
+				</dl>
+				<dl>
+					<dt>客户管理</dt>
+					<dd><a href="">认证客户</a></dd>
+					<dd><a href="">级别设置</a></dd>
+				</dl>
+				<dl>
+					<dt>账户管理</dt>
+					<dd><a href="">我的财富</a></dd>
+					<dd><a href="">注册资料</a></dd>
+					<dd><a href="">银行卡</a></dd>
+				</dl>
+				<dl>
+					<dt>授信管理</dt>
+					<dd><a href="">授信关系</a></dd>
+					<dd><a href="">额度调整</a></dd>
+					<dd><a href="">使用记录</a></dd>
+				</dl>
+			</div><!-- 左边导航公共部分结束 -->
+			<div class="rightPart"> <!-- 右边主体内容 -->
+				<div class="myPlace"> <!-- 所在位置开始 -->
 					<span>当前位置:</span>
 					<a href="">首页</a>
 					<span>&gt;</span>
 					<a href="">卖家中心</a>
 					<span>&gt;</span>
-					<a href="">我的财富</a>
-				</div>
-				<!-- 当前位置结束 -->
-				<div class="wealthOrderDetails-head">
-					<h2>当前状态：<span class="orange">商家已经发货，等待买家确认</span></h2>
-					<div class="wealthOrderDetails-headBar"><!-- 进度条部分开始 -->
-						<p>
-							<span>确认订单</span>
-							<span>支付货款</span>
-							<span style="margin-right: 153px;">卖家发货</span>
-							<span>确认收货</span>
-							<span style="margin:0">评价</span>
-						</p>
-						<div class="wealthOrderDetails-headBarbg"></div>
-						<div class="wealthOrderDetails-headBartimes">
-							<span>2015-06-06 10:31:33</span>
-							<span>2015-06-06 10:31:34</span>
-							<span>2015-06-06 10:31:35</span>
-							<span>2015-06-06 10:31:36</span>
+					<a href="">安全问题设置</a>
+				</div> <!-- 所在位置结束 -->
+				<div class="rightCont" id="securitySettings"> <!-- 右边的正文内容开始 -->
+					<h3>安全保护问题设置</h3>
+					<div class="securitySettings-title">为了避免遗忘，请填写真实信息</div>
+					<form action="" method="">
+						<div>
+							<label for="">安全保护问题一：</label>
+							<select name="" id="">
+								<option value="">请选择您的安全问题</option>
+								<option value="">您的父亲叫什么名字</option>
+								<option value="">您的母亲叫什么名字</option>
+							</select>
 						</div>
-					</div>
-					<!-- 进度条部分结束 -->
-					<p class="wealthOrderDetails-times">还有<span>6天20小时35分38秒</span>来确认收货，超时系统将订单自动确认收货</p>
-					<p class="wealthOrderDetails-confirm">您可以<a href="">确认收货</a><a href="">延长收货时间</a></p>
-				</div>
-				<div class="wealthOrderDetails-mid clear">
-					<div>
-						<h4>订单信息</h4>
-						<p>买家姓名：王思聪</p>
-						<p>会员号：1234567890987</p>
-						<p>收货地址：王思聪，15306528524，浙江省杭州市滨江区泰安路199号，311500</p>
-						<p>买家留言：--</p>
-					</div>
-					<div>
-						<h4>买家信息</h4>
-						<p>商家：苍南县永丰村农业生产资料有限公司</p>
-						<p>企业ID：1234567890987</p>
-						<p>联系电话：15306528524</p>
-						<p>发货地址：王思聪，15306528524，浙江省温州苍南县，311500</p>
-					</div>
-				</div>
-				<div class="wealthOrderDetails-title green">订单号：1234567890987654</div>
-				<table>
-					<tr style="border:1px solid #e5e5e5;border-bottom:none;">
-						<th style="width: 190px">商品图片</th>
-						<th style="width: 170px">商品名称</th>
-						<th style="width: 110px">规格</th>
-						<th style="width: 90px">数量</th>
-						<th style="width: 100px">单价</th>
-						<th style="width: 90px">总价</th>
-						<th style="width: 100px">运费</th>
-						<th style="width: 130px">订单总金额</th>
-						<th style="width: 210px">实际付款</th>
-					</tr>
-					<tr>
-						<td>
-							<div class="imgs"><a href=""><img src="images/goods5.png" alt=""></a></div>
-						</td>
-						<td class="tableTxt">
-							<a href="">道儿纯硫酸复合葡萄酸专用多功能棚摸过果蔬钙肥</a>
-						</td>
-						<td>
-							<p>40kg/包</p>
-							<p>80kg/包</p>
-						</td>
-						<td>
-							<p>100</p>
-							<p>100</p>
-						</td>
-						<td>
-							<p>5.0</p>
-							<p>5.0</p>
-						</td>
-						<td>
-							<p>500</p>
-							<p>500</p>
-						</td>
-						<td>
-							10.00
-						</td>
-						<td>51.00</td>
-						<td>
-							<div class="f14 c3 fb">实收款</div>
-							<div class="f25 fh orange">510.00</div>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<div class="imgs"><a href=""><img src="images/goods5.png" alt=""></a></div>
-						</td>
-						<td class="tableTxt">
-							<a href="">道儿纯硫酸复合葡萄酸专用多功能棚摸过果蔬钙肥</a>
-						</td>
-						<td class="tableTxtP">
-							<p>40kg/包</p>
-						</td>
-						<td class="tableTxtP">
-							<p>100</p>
-						</td>
-						<td class="tableTxtP">
-							<p>5.0</p>
-						</td>
-						<td class="tableTxtP">
-							<p>500</p>
-						</td>
-						<td>
-							10.00
-						</td>
-						<td>51.00</td>
-						<td>
-							<div class="f14 c3 fb">实收款</div>
-							<div class="f25 fh orange">510.00</div>
-						</td>
-					</tr>
-				</table>
-			</article>
+						<div>
+							<label for="">答案：</label>
+							<input type="text" name="" id="">
+						</div>
+						<div>
+							<label for="">安全保护问题二：</label>
+							<select name="" id="">
+								<option value="">请选择您的安全问题</option>
+								<option value="">您的父亲叫什么名字</option>
+								<option value="">您的母亲叫什么名字</option>
+							</select>
+						</div>
+						<div>
+							<label for="">答案：</label>
+							<input type="text" name="" id="">
+						</div>
+						<div>
+							<label for="">安全保护问题三：</label>
+							<select name="" id="">
+								<option value="">请选择您的安全问题</option>
+								<option value="">您的父亲叫什么名字</option>
+								<option value="">您的母亲叫什么名字</option>
+							</select>
+						</div>
+						<div>
+							<label for="">答案：</label>
+							<input type="text" name="" id="">
+						</div>
+
+					</form>
+					<div class="buttons securitySettings-btns">提交</div>
+				</div><!-- 右边的正文内容结束 -->
+			</div>
 		</div>
 	</section><!-- 主体内容结束 -->
 
@@ -352,7 +322,7 @@
 				</li>
 			</ul>
 		</div>
-		<ul class="aboutUs clear">
+		<ul class="aboutUs clear ">
 				<li>
 					<p>关于我们</p>
 					<p>会员服务</p>
@@ -385,7 +355,6 @@
 		$(".shopTitle").click(function(){
 			$(".shopContent").toggle(function(){});
 		});
-
 		
 	})
 </script>

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
@@ -7,11 +7,6 @@
 	<link rel="stylesheet" href="css/common.css" type="text/css">
 	<link rel="stylesheet" href="css/seller.css" type="text/css">
 	<script type="text/javascript" src="js/jquery.1.11.3.min.js"></script>
-	<script type="text/javascript" charset="utf-8" src="UED/ueditor.config.js"></script>
-	<!-- 编辑器源码文件 -->
-	<script type="text/javascript"  charset="utf-8" src="UED/ueditor.all.min.js"></script>
-	<script type="text/javascript" charset="utf-8" src="UED/lang/zh-cn.js"></script>
-    <!-- 实例化编辑器 -->
 	<!--[if IE]> 
 	<script> 
 	(function(){if(!/*@cc_on!@*/0)return;var e = "header,footer,nav,article,section".split(','),i=e.length;while(i--){document.createElement(e[i])}})() 
@@ -200,130 +195,120 @@
 
 	<section class="container"><!-- 主体内容开始 -->
 		<div class="containerBox clear">
-			<article class="wealthOrderDetails">
-				<!-- 当前位置开始 -->
-				<div class="current">
+			<div class="leftPart"> <!-- 左边导航公共部分开始 -->
+				<h4>卖家中心</h4>
+				<dl>
+					<dt>交易管理</dt>
+					<dd><a href="">已卖出的商品</a></dd>
+					<dd><a href="">评价管理</a></dd>
+				</dl>
+				<dl>
+					<dt>商品管理</dt>
+					<dd><a href="">发布商品</a></dd>
+					<dd><a href="" class="green">出售中的商品</a></dd>
+					<dd><a href="">仓库中的商品</a></dd>
+					<dd><a href="">商品分类管理</a></dd>
+				</dl>
+				<dl>
+					<dt>店铺管理</dt>
+					<dd><a href="">查看我的商铺</a></dd>
+					<dd><a href="">商铺设置</a></dd>
+					<dd><a href="">掌柜推荐</a></dd>
+					<dd><a href="">运费模板</a></dd>
+					<dd><a href="">子账号设置</a></dd>
+				</dl>
+				<dl>
+					<dt进货渠道</dt>
+					<dd><a href="" >我代理的</a></dd>
+					<dd><a href="">代理我的</a></dd>
+				</dl>
+				<dl>
+					<dt>客户管理</dt>
+					<dd><a href="">认证客户</a></dd>
+					<dd><a href="">级别设置</a></dd>
+				</dl>
+				<dl>
+					<dt>账户管理</dt>
+					<dd><a href="">我的财富</a></dd>
+					<dd><a href="">注册资料</a></dd>
+					<dd><a href="">银行卡</a></dd>
+				</dl>
+				<dl>
+					<dt>授信管理</dt>
+					<dd><a href="">授信关系</a></dd>
+					<dd><a href="">额度调整</a></dd>
+					<dd><a href="">使用记录</a></dd>
+				</dl>
+			</div><!-- 左边导航公共部分结束 -->
+			<div class="rightPart"> <!-- 右边主体内容 -->
+				<div class="myPlace"> <!-- 所在位置开始 -->
 					<span>当前位置:</span>
 					<a href="">首页</a>
 					<span>&gt;</span>
 					<a href="">卖家中心</a>
 					<span>&gt;</span>
 					<a href="">我的财富</a>
-				</div>
-				<!-- 当前位置结束 -->
-				<div class="wealthOrderDetails-head">
-					<h2>当前状态：<span class="orange">商家已经发货，等待买家确认</span></h2>
-					<div class="wealthOrderDetails-headBar"><!-- 进度条部分开始 -->
-						<p>
-							<span>确认订单</span>
-							<span>支付货款</span>
-							<span style="margin-right: 153px;">卖家发货</span>
-							<span>确认收货</span>
-							<span style="margin:0">评价</span>
-						</p>
-						<div class="wealthOrderDetails-headBarbg"></div>
-						<div class="wealthOrderDetails-headBartimes">
-							<span>2015-06-06 10:31:33</span>
-							<span>2015-06-06 10:31:34</span>
-							<span>2015-06-06 10:31:35</span>
-							<span>2015-06-06 10:31:36</span>
+				</div> <!-- 所在位置结束 -->
+				<div class="rightCont Editbankcard" style="min-height: 630px;"> <!-- 右边的正文内容开始 -->
+					<h3>编辑银行卡</h3>
+					<!-- 右边内容输入框，按钮 -->
+					<h2 class="titleH2">仅限持卡人本人操作，请如实填写以下信息用于实名身份验证</h2>
+					<form action="" method="">
+						<div>
+							<label for="">选择开户银行：</label>
+							<select name="" id="">
+								<option value="">农业银行</option>
+								<option value=""></option>
+							</select>
 						</div>
-					</div>
-					<!-- 进度条部分结束 -->
-					<p class="wealthOrderDetails-times">还有<span>6天20小时35分38秒</span>来确认收货，超时系统将订单自动确认收货</p>
-					<p class="wealthOrderDetails-confirm">您可以<a href="">确认收货</a><a href="">延长收货时间</a></p>
+						<div>
+							<label for="">银行卡类型：</label>
+							<select name="" id="" class="select2">
+								<option value="">农业银行</option>
+								<option value=""></option>
+							</select>
+						</div>
+						<div>
+							<label for="">开户名：</label>
+							<input type="text" placeholder="xx有限公司">
+						</div>
+						<div>
+							<label for="">开户行支行：</label>
+							<input type="text" placeholder="xx支行">
+						</div>
+						<div>
+							<label for="">银行卡类型：</label>
+							<input type="text" placeholder="1111 *** *** 2222">
+						</div>
+						<div>
+							<label for="">手机号码：</label>
+							<input type="text" placeholder="15306528528">
+							<span class="msg"></span>
+						</div>
+						<div>
+							<label for="">效验码：</label>
+							<input type="text" name="" id="" class="Editbankcard-codetxt">
+							<input type="button" value="获取验证码" class="Editbankcard-code">
+						</div>
+						<div>
+							<input type="button" value="提交" class="Editbankcard-sub buttons">
+							<a href="#" class="green  protocol f12"><<中农在线银行卡支付协议>></a>
+						</div>
+					</form>
+				</div><!-- 右边的正文内容结束 -->
+				<!-- 右边的正文内容开始 -->
+				<div class="rightCont wealthRedtop-cont" style="min-height: 355px;">
+					<h2>红包充值遇到问题：</h2>
+					<h4>1.我还能用信用卡在商城购物么？</h4>
+					<p>答：您在带有信用卡小标识的店铺购物，可以直接使用信用卡快捷（含卡通）、网银进行信用卡支付，支付限额为您的卡面额度。在没有信用卡标识的店铺购物时，您可以使用信用卡快捷（含卡通）、网银进行信用卡支付，月累计支付限额不超过500元。<a href="">查看使用说明</a></p>
+					<h4>2.没有网上银行，怎么用银行卡充值？</h4>
+					<p>答：储蓄卡用户，请使用储蓄卡快捷支付充值，开通后只需输入支付宝支付密码，即可完成充值。</p>
+					<h4>3.怎样在网上开通储蓄卡快捷支付(含卡通)？</h4>
+					<p>答：已支持国内大部分主流银行在线开通。在易宝支付填写信息后，根据页面引导在网上银行完成开通。<a href="">马上开通</a></p>
+					<a href="" class="green f12">更多帮助</a>
 				</div>
-				<div class="wealthOrderDetails-mid clear">
-					<div>
-						<h4>订单信息</h4>
-						<p>买家姓名：王思聪</p>
-						<p>会员号：1234567890987</p>
-						<p>收货地址：王思聪，15306528524，浙江省杭州市滨江区泰安路199号，311500</p>
-						<p>买家留言：--</p>
-					</div>
-					<div>
-						<h4>买家信息</h4>
-						<p>商家：苍南县永丰村农业生产资料有限公司</p>
-						<p>企业ID：1234567890987</p>
-						<p>联系电话：15306528524</p>
-						<p>发货地址：王思聪，15306528524，浙江省温州苍南县，311500</p>
-					</div>
-				</div>
-				<div class="wealthOrderDetails-title green">订单号：1234567890987654</div>
-				<table>
-					<tr style="border:1px solid #e5e5e5;border-bottom:none;">
-						<th style="width: 190px">商品图片</th>
-						<th style="width: 170px">商品名称</th>
-						<th style="width: 110px">规格</th>
-						<th style="width: 90px">数量</th>
-						<th style="width: 100px">单价</th>
-						<th style="width: 90px">总价</th>
-						<th style="width: 100px">运费</th>
-						<th style="width: 130px">订单总金额</th>
-						<th style="width: 210px">实际付款</th>
-					</tr>
-					<tr>
-						<td>
-							<div class="imgs"><a href=""><img src="images/goods5.png" alt=""></a></div>
-						</td>
-						<td class="tableTxt">
-							<a href="">道儿纯硫酸复合葡萄酸专用多功能棚摸过果蔬钙肥</a>
-						</td>
-						<td>
-							<p>40kg/包</p>
-							<p>80kg/包</p>
-						</td>
-						<td>
-							<p>100</p>
-							<p>100</p>
-						</td>
-						<td>
-							<p>5.0</p>
-							<p>5.0</p>
-						</td>
-						<td>
-							<p>500</p>
-							<p>500</p>
-						</td>
-						<td>
-							10.00
-						</td>
-						<td>51.00</td>
-						<td>
-							<div class="f14 c3 fb">实收款</div>
-							<div class="f25 fh orange">510.00</div>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<div class="imgs"><a href=""><img src="images/goods5.png" alt=""></a></div>
-						</td>
-						<td class="tableTxt">
-							<a href="">道儿纯硫酸复合葡萄酸专用多功能棚摸过果蔬钙肥</a>
-						</td>
-						<td class="tableTxtP">
-							<p>40kg/包</p>
-						</td>
-						<td class="tableTxtP">
-							<p>100</p>
-						</td>
-						<td class="tableTxtP">
-							<p>5.0</p>
-						</td>
-						<td class="tableTxtP">
-							<p>500</p>
-						</td>
-						<td>
-							10.00
-						</td>
-						<td>51.00</td>
-						<td>
-							<div class="f14 c3 fb">实收款</div>
-							<div class="f25 fh orange">510.00</div>
-						</td>
-					</tr>
-				</table>
-			</article>
+				<!-- 右边的正文内容结束 -->
+			</div>
 		</div>
 	</section><!-- 主体内容结束 -->
 
@@ -352,7 +337,7 @@
 				</li>
 			</ul>
 		</div>
-		<ul class="aboutUs clear">
+		<ul class="aboutUs clear ">
 				<li>
 					<p>关于我们</p>
 					<p>会员服务</p>
@@ -385,7 +370,7 @@
 		$(".shopTitle").click(function(){
 			$(".shopContent").toggle(function(){});
 		});
-
+		
 		
 	})
 </script>
