@@ -1579,6 +1579,10 @@
 	margin-left: 5px;
 	margin-right: 122px;
 }
+.wealthBlank ul li .wealthBlank-title .wealthBlank-type2{
+	background: url(../images/blankbg2.png) no-repeat;
+	background-position: center;
+}
 .wealthBlank ul li .wealthBlank-title a{
 	font-size: 14px;
 }
@@ -2283,4 +2287,193 @@
 	height: 50px;
 	line-height: 50px;
 	margin:25px 0 0 231px;
+}
+/*账户管理-忘记密码*/
+.resetPay .resetPay-title{
+	margin:0 0 20px 20px;
+}
+.resetPay form div{
+	margin-bottom: 20px;
+}
+.resetPay form div label{
+	display: inline-block;
+	width: 192px;
+	text-align: right;
+}
+.resetPay form div input[type=text]{
+	display: inline-block;
+	width: 255px;
+	height: 35px;
+}
+.resetPay form div input[type=button]{
+	display: inline-block;
+	width: 90px;
+	height: 35px;
+	background: #ff6600;
+	border:none;
+	color: #fff;
+	font-size: 14px;
+}
+.resetPay form div input[type=text]::-webkit-input-placeholder,
+.creditAdjustment form>div input[type=text]::-webkit-input-placeholder{
+	font-size: 12px;
+}
+.resetPay .resetPay-btn{
+	margin:30px 0 0 229px;
+	width: 110px;
+	height: 50px;
+	line-height: 50px;
+} 
+/*授信管理*/
+.creditAdjustment h2{
+	margin: 0 0 30px 25px;
+	width: 910px;
+	height: 55px;
+	background: #f5f8fa;
+}
+.creditAdjustment h2 a{
+	display: inline-block;
+	width: 120px;
+	height: 33px;
+	background: #589325; 
+	font-size: 14px;
+	text-align: center;
+	line-height: 33px;
+	color: #fff;
+	margin:10px 0 0 20px;
+}
+.creditAdjustment form>div{
+	margin-bottom: 20px;
+}
+.creditAdjustment form>div input[type=text]{
+	display: inline-block;
+	width: 180px;
+	height: 20px;
+	margin-right: 50px;
+	line-height: 20px;
+}
+.creditAdjustment form>div select{
+	display: inline-block;
+	width: 80px;
+	height: 20px;
+}
+.creditAdjustment form>div input[type=button]{
+	border:none;
+	display: inline-block;
+	width: 70px;
+	height: 30px;
+	line-height: 30px;
+	background: #589325;
+	color: #fff;
+	margin-left: 45px;
+}
+.creditAdjustment .creditAdjustment-title{
+	margin:0 0 10px 15px;
+}
+.creditAdjustment .creditAdjustment-title span{
+	margin:0 10px 0 5px;
+}
+.creditAdjustment .creditAdjustment-title input[type=button]{
+	border:none;
+	display: inline-block;
+	width: 70px;
+	height: 25px;
+	background: #fff;
+	font-size: 12px;
+	border:1px solid #e5e5e5;
+	vertical-align: top;
+	margin-top: -3px;
+}
+.creditAdjustment table{
+	margin-left: 15px;
+	width: 942px;
+}
+.creditAdjustment table tr{
+
+}
+.creditAdjustment table tr th{
+	height: 32px;
+	background: #f5f8fa;
+	font-size: 12px;
+}
+.creditAdjustment table tr td{
+	text-align: center;
+	height: 54px;
+	border-bottom: 1px solid #e5e5e5;
+}
+.creditAdjustment table tr:last-child td{
+	border:none;
+}
+.creditAdjustment table tr td span{
+	cursor: pointer;
+	margin-right: 10px;
+	font-weight: bolder;
+}
+.byCont{
+	width: 481px;
+    height: 135px;
+    border: 4px solid #ddd;
+    background: #f5f8fa;
+    font-size: 14px;
+}
+.byCont p{
+	font-size: 12px;
+	color: #999;
+	margin: 17px 0 25px 20px;
+}
+.byCont p label{
+	margin:0 0 0 99px;
+}
+.byCont p input[type=button]{
+	display: inline-block;
+	width: 72px;
+	height: 31px;
+}
+.byCont p .byBtn2,
+.byCont p .refuseBtn2{
+	background: #fff;
+	color: #589325;
+	border:1px solid #e5e5e5;
+	margin-left: 18px;
+}
+/*使用记录*/
+.useRecord form{
+	margin-bottom: 60px;
+}
+.useRecord form label{
+	color: #666;
+	font-size: 12px;
+}
+.useRecord form>div{
+	margin-bottom: 20px;
+}
+.useRecord form input[type=text]{
+	display: inline-block;
+	width: 100px;
+	height: 22px;
+}
+.useRecord form input[type=button]{
+	width: 70px;
+	height: 33px;
+	margin-left: 45px;
+}
+.useRecord table{
+	margin-left: 20px;
+	width: 942px;
+	font-size: 12px;
+}
+.useRecord table tr{
+
+}
+.useRecord table tr th{
+	height: 32px;
+	background: #f5f8fa;
+}
+.useRecord table tr td{
+	text-align: center;
+	height: 54px;
+	border-bottom: 1px solid #e5e5e5;
+}
+.useRecord table tr:last-child td{
+	border-bottom: none;
 }
