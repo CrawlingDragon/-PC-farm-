@@ -252,8 +252,7 @@
 				</div> <!-- 所在位置结束 -->
 				<!-- 右边的正文内容开始 -->
 				<div class="rightCont creditAdjustment" style="min-height: 114px;"> 
-					<h3>授信调整<span class="orange">(20)</span></h3>
-					<h2><a href="">我要调整额度</a></h2>
+					<h3>授信关系</h3>
 					<form action="" method="">
 						<div>
 							<label for="">申请人：</label>
@@ -280,11 +279,188 @@
 							<input type="button" value="搜索">
 						</div>
 					</form>
-					<div class="creditAdjustment-title">
-						<input type="checkbox" name="" id="">
-						<span>全选</span>
-						<input type="button" value="批量通过">
-						<input type="button" value="批量拒绝">
+					<div class="creditRelations">
+						<div class="box1">
+							<ul class="clear">
+								<li>新申请(2)</li>
+								<li>审核中(47)</li>
+								<li class="active">审核通过(316)</li>
+								<li>拒绝(1)</li>
+								<li>终止(9)</li>
+							</ul>
+						</div>
+						<div class="showBox">
+							<div class="showCont hide">
+								<!-- 新申请 -->
+								<div class="newReview">
+									<table>
+											<tr style="border:1px solid #e5e5e5;">
+												<th style="width: 130px;">申请时间</th>
+												<th style="width: 114px;">申请人</th>
+												<th style="width: 174px;">会员号 </th>
+												<th style="width: 132px;">会员性质</th>
+												<th style="width: 150px;">授信额度</th>
+												<th style="width: 235px;">操作</th>
+											</tr>
+											<tr>
+												<td>2015-06-09</td>
+												<td>王思聪</td>
+												<td>12015052517311</td>
+												<td>厂家</td>
+												<td class="orange fb">20000.00</td>
+												<td class="green fb"><i class="go">我去审核</i></td>
+											</tr>
+										</table>
+									</div>
+								<!-- 新申请结束 -->
+							</div>
+							<div class="showCont hide">
+								<!-- 审核中 -->
+								<div class="underReview">
+									<table>
+										<tr style="border:1px solid #e5e5e5;">
+											<th style="width: 130px;">申请时间</th>
+											<th style="width: 114px;">申请人</th>
+											<th style="width: 174px;">会员号 </th>
+											<th style="width: 132px;">会员性质</th>
+											<th style="width: 150px;">授信额度</th>
+											<th style="width: 235px;">操作</th>
+										</tr>
+										<tr>
+											<td>2015-06-09</td>
+											<td>王思聪</td>
+											<td>12015052517311</td>
+											<td>厂家</td>
+											<td class="orange fb">20000.00</td>
+											<td class="orange fb"><span class="underPass">通过</span><span class="underDeny">拒绝</span></td>
+										</tr>
+										<tr>
+											<td>2015-06-09</td>
+											<td>王思聪</td>
+											<td>12015052517311</td>
+											<td>厂家</td>
+											<td class="orange fb">20000.00</td>
+											<td class="orange fb"><span class="underPass">通过</span><span class="underDeny">拒绝</span></td>
+										</tr>
+									</table>	
+								</div>
+								<!-- 审核中结束 -->
+							</div>
+							<div class="showCont show">
+								<!-- 审核通过 -->
+									<div class="passed">
+										<table>
+											<tr style="border:1px solid #e5e5e5;">
+												<th style="width: 110px;">申请时间</th>
+												<th style="width: 108px;">申请人</th>
+												<th style="width: 124px;">会员号 </th>
+												<th style="width: 106px;">会员性质</th>
+												<th style="width: 104px;">授信额度</th>
+												<th style="width: 132px;">授信余额</th>
+												<th style="width: 114px;">需还款</th>
+												<th style="width: 144px;">操作</th>
+											</tr>
+											<tr>
+												<td>2015-06-09</td>
+												<td>王思聪</td>
+												<td>12015052517311</td>
+												<td>厂家</td>
+												<td class="orange fb">20000.00</td>
+												<td>900.00</td>
+												<td class="green fb">110000.00</td>
+												<td class="green fb"><span class="passed-adjustment">调整额度</span><span class="passed-termination">终止</span></td>
+											</tr>
+											<tr>
+												<td>2015-06-09</td>
+												<td>王思聪</td>
+												<td>12015052517311</td>
+												<td>厂家</td>
+												<td class="orange fb">20000.00</td>
+												<td>900.00</td>
+												<td class="green fb">110000.00</td>
+												<td class="green fb"><span class="passed-adjustment">调整额度</span><span class="passed-termination">终止</span></td>
+											</tr>
+										</table>
+									</div>
+								<!-- 审核通过结束 -->
+							</div>
+							<div class="showCont hide">
+								<!-- 拒绝 -->
+									<div class="denys">
+										<table>
+											<tr style="border:1px solid #e5e5e5;">
+												<th style="width: 110px;">申请时间</th>
+												<th style="width: 108px;">申请人</th>
+												<th style="width: 124px;">会员号 </th>
+												<th style="width: 106px;">会员性质</th>
+												<th style="width: 104px;">授信额度</th>
+												<th style="width: 132px;">授信余额</th>
+												<th style="width: 114px;">需还款</th>
+												<th style="width: 144px;">操作</th>
+											</tr>
+											<tr>
+												<td>2015-06-09</td>
+												<td>王思聪</td>
+												<td>12015052517311</td>
+												<td>厂家</td>
+												<td class="orange fb">20000.00</td>
+												<td>900.00</td>
+												<td class="green fb">110000.00</td>
+												<td class="orange fb restore"></td>
+											</tr>
+											<tr>
+												<td>2015-06-09</td>
+												<td>王思聪</td>
+												<td>12015052517311</td>
+												<td>厂家</td>
+												<td class="orange fb">20000.00</td>
+												<td>900.00</td>
+												<td class="green fb">110000.00</td>
+												<td class="orange fb restore"></td>
+											</tr>
+										</table>
+									</div>
+								<!-- 拒绝结束 -->
+							</div>
+							<div class="showCont hide">
+								<!-- 终止列表 -->
+								<div class="terminationList">
+									<table>
+										<tr style="border:1px solid #e5e5e5;">
+											<th style="width: 110px;">申请时间</th>
+											<th style="width: 108px;">申请人</th>
+											<th style="width: 124px;">会员号 </th>
+											<th style="width: 106px;">会员性质</th>
+											<th style="width: 104px;">授信额度</th>
+											<th style="width: 132px;">授信余额</th>
+											<th style="width: 114px;">需还款</th>
+											<th style="width: 144px;">操作</th>
+										</tr>
+										<tr>
+											<td>2015-06-09</td>
+											<td>王思聪</td>
+											<td>12015052517311</td>
+											<td>厂家</td>
+											<td class="orange fb">20000.00</td>
+											<td>900.00</td>
+											<td class="green fb">110000.00</td>
+											<td class="orange fb restore">恢复</td>
+										</tr>
+										<tr>
+											<td>2015-06-09</td>
+											<td>王思聪</td>
+											<td>12015052517311</td>
+											<td>厂家</td>
+											<td class="orange fb">20000.00</td>
+											<td>900.00</td>
+											<td class="green fb">110000.00</td>
+											<td class="orange fb restore">恢复</td>
+										</tr>
+									</table>
+								</div>
+								<!-- 终止列表结束 -->
+							</div>
+						</div>
 					</div>
 				</div>
 				<!-- 右边的正文内容结束 -->
@@ -350,7 +526,108 @@
 		$(".shopTitle").click(function(){
 			$(".shopContent").toggle(function(){});
 		});
-	
+		//卡片切换
+		$('.creditRelations li').click(function(){
+			$(this).addClass('active').siblings().removeClass('active');
+			$('.showBox .showCont:eq('+$(this).index()+')').show().siblings().hide();
+		});
+
+		$(".underPass").click(function(){  //通过按钮弹出
+		layer.open({
+		    type: 1,
+		    title:false,
+		    skin: 'layer-modify', //样式类名
+		    closeBtn: 0, //不显示关闭按钮
+		    shift: 0,
+		    area: ['489px', '143px'],
+		    shadeClose: false, //开启遮罩关闭
+		    content: '<div class="byCont"><p>拒绝审核用户，用户在购买认证商品时，只能通过其他方式支付货款</p><p><label>确认拒绝审核：</label><input type="button" value="是" class="buttons byBtn1"><input type="button" value="否" class="buttons byBtn2"></p></div>',
+		    success:function(){
+		    	$(".byBtn2").click(function(){ //取消按钮
+		    		layer.closeAll('page');
+		    	});
+		    	$(".byBtn1").click(function(){ //确定按钮
+		    		
+		    		layer.closeAll('page');
+		    		alert("修改成功！");
+		    	});
+		    }
+		});
+	  });
+
+		$(".underDeny").click(function(){  //拒绝按钮弹出
+		  layer.open({
+		    type: 1,
+		    title:false,
+		    skin: 'layer-modify', //样式类名
+		    closeBtn: 0, //不显示关闭按钮
+		    shift: 0,
+		    area: ['489px', '143px'],
+		    shadeClose: false, //开启遮罩关闭
+		    content: '<div class="byCont"><p>拒绝审核用户，用户在购买认证商品时，只能通过其他方式支付货款</p><p><label>确认拒绝审核：</label><input type="button" value="是" class="buttons refuseBtn1"><input type="button" value="否" class="buttons refuseBtn2"></p></div>',
+		    success:function(){
+		    	$(".refuseBtn2").click(function(){ //取消按钮
+		    		layer.closeAll('page');
+		    	});
+		    	$(".refuseBtn1").click(function(){ //确定按钮
+		    		
+		    		layer.closeAll('page');
+		    		alert("修改成功！");
+		    	});
+		    }
+		});
+	  });
+		$(".passed-termination").click(function(){  //终止按钮弹出
+		  layer.open({
+		    type: 1,
+		    title:false,
+		    skin: 'layer-modify', //样式类名
+		    closeBtn: 0, //不显示关闭按钮
+		    shift: 0,
+		    area: ['489px', '143px'],
+		    shadeClose: false, //开启遮罩关闭
+		    content: '<div class="byCont"><p>拒绝审核用户，用户在购买认证商品时，只能通过其他方式支付货款</p><p><label>确认拒绝审核：</label><input type="button" value="是" class="buttons refuseBtn1"><input type="button" value="否" class="buttons refuseBtn2"></p></div>',
+		    success:function(){
+		    	$(".refuseBtn2").click(function(){ //取消按钮
+		    		layer.closeAll('page');
+		    	});
+		    	$(".refuseBtn1").click(function(){ //确定按钮
+		    		
+		    		layer.closeAll('page');
+		    		alert("修改成功！");
+		    		alert($(this).length);
+		    	});
+		    }
+		});
+	  });
+
+		$(".passed-adjustment").click(function(){  //调整额度按钮弹出
+		  layer.open({
+		    type: 1,
+		    title:false,
+		    skin: 'layer-modify', //样式类名
+		    closeBtn: 0, //不显示关闭按钮
+		    shift: 0,
+		    area: ['489px', '287px'],
+		    shadeClose: false, //开启遮罩关闭
+		    content: '<div class="paCont"><p class="paTxt">授信额度调整</p><p><label>当前授信总额：</label><span>30000.00元</span></p><p><label>当前授信余额：</label><span>30000.00元</span></p><p><label>调整额度：</label><select name="" id=""><option value="">增加 +</option><option value="">减少 -</option></select><input type="text" name="" >元</p><p><label>当前授信总额：</label><span>30000.00元</span></p><p><input type="button" value="是" class="buttons paBtn1"><input type="button" value="否" class="buttons paBtn2"></p></div>',
+		    success:function(){
+		    	$(".paBtn2").click(function(){ //取消按钮
+		    		layer.closeAll('page');
+		    	});
+		    	$(".paBtn1").click(function(){ //确定按钮
+		    		
+		    		layer.closeAll('page');
+		    		alert("修改成功！");
+		    		alert($(this).length);
+		    	});
+		    }
+		});
+	  });
+
+
+
+
 	});
 </script>
 </body>
