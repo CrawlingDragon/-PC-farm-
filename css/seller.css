@@ -1421,6 +1421,9 @@
 	color: #333;
 	border-bottom: 1px solid #e5e5e5;
 }
+.approveClientele-content #showbox table tr:last-child td{
+	border-bottom: none;
+}
 .approveClientele-content #showbox table tr .recovery{
 	color: #ff6600;
 	font-size: 14px;
@@ -2723,7 +2726,36 @@
 	background:url(../images/buyNavbj.png) no-repeat;
 	background-position: 15px 2px;
 }
-.buyerNav .active a{
+.jionMystore form div input[type=text]{
+	width: 200px;
+}
+/*消息*/
+.messageBox #box1 ul li{
+	padding:18px 45px;
+	float: left;
+	background: #fff;
+	position: relative;
+}
+.messageBox #box1 ul li span{
+	position: absolute;
+	top: 2px;
+	right: 5px;
+	display: inline-block;
+	background: #ff6600;
+  	border-radius: 50%;
+ 	width: 17px;
+ 	height: 17px;
+}
+.messageBox #box1 ul li.active{
+	border:1px solid #e5e5e5;
+	border-top: 2px solid #589325;
+	margin-bottom: -3px;
+	border-bottom: 1px solid #fff;
+}
+.messageBox .showBox1{
+	width: 1187px;
+	border: 1px solid #e5e5e5;
+}.buyerNav .active a{
 	color: #589325;
 }
 /*买家中心-安全设置*/

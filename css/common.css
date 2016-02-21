@@ -66,7 +66,7 @@ input[type=text],textarea,select{
 }
 ::-webkit-input-placeholder{
 	color: #d1d1d1;
-	font-size: 14px;
+	font-size: 12px;
 }
 select{
 	font-size: 12px;
