@@ -1887,6 +1887,10 @@
 	height: 35px;
 	width: 250px;
 }
+.balanceWithdraw .small-title{
+	color: #999;
+	margin:10px 0 0 202px;
+}
 .balanceWithdraw .balanceWithdraw-btn{
 	display: inline-block;
 	width: 110px;
@@ -2407,6 +2411,7 @@
 	font-size: 12px;
 }
 .creditAdjustment table tr td{
+	font-size: 12px;
 	text-align: center;
 	height: 54px;
 	border-bottom: 1px solid #e5e5e5;
@@ -2418,6 +2423,7 @@
 	cursor: pointer;
 	margin-right: 10px;
 	font-weight: bolder;
+	font-size: 14px;
 }
 .byCont{
 	width: 481px;
@@ -2555,7 +2561,7 @@
 	color: #579425;
 	border:1px solid #e5e5e5;
 }
-.newReview i{
+.creditRelations i{
 	font-style: normal;
 	cursor: pointer;
 }
@@ -2716,4 +2722,196 @@
 .buyerNav .active{
 	background:url(../images/buyNavbj.png) no-repeat;
 	background-position: 15px 2px;
+}
+.buyerNav .active a{
+	color: #589325;
+}
+/*买家中心-安全设置*/
+.buyerSafe form>div{
+	width: 940px;
+	height: 50px;
+	line-height: 50px;
+	border-bottom: 1px solid #e5e5e5;
+}
+.buyerSafe form>div:last-child{
+	border:none;
+}
+.buyerSafe form>div label{
+	display: inline-block;
+	margin-right: 15px;
+}
+.buyerSafe form>div span{
+	cursor: pointer;
+}
+.buyerSafe form>div input[type=text]{
+	border:none;
+	margin-left: 50px;
+}
+/*买家中心-资料*/
+.buyerProfile #box1 ul li{
+	cursor: pointer;
+	float: left;
+	padding:13px 40px;
+	border:1px solid #e5e5e5;
+	font-size: 16px;
+	font-weight: bolder;
+	margin-right: 20px;
+	background:#fff;
+	border-bottom: none;
+}
+.buyerProfile #box1 ul li.active{
+	margin-bottom: -3px;
+	border-top: 2px solid #ec651a;
+	border-bottom: 1px solid #fff;
+	color: #ec651a;
+}
+.buyerProfile #showBox{
+	border:1px solid  #e5e5e5;
+}
+.buyerProfile #showBox .vipProfile{
+	padding-bottom: 159px;
+}
+.buyerProfile #showBox .vipProfile .vipProfile-title{
+	color: #589325;
+	font-size: 14px;
+	margin: 30px 0 28px 20px;
+}
+.buyerProfile #showBox .vipProfile>div{
+	margin-bottom: 20px;
+}
+.buyerProfile #showBox .vipProfile>div:first-child+div+div+div{
+	margin-bottom: 30px;
+}
+.buyerProfile #showBox .vipProfile>div:first-child+div+div+div+div{
+	margin-bottom: 30px;
+}
+.buyerProfile #showBox .vipProfile>div:first-child+div+div+div+div+div{
+	margin-bottom: 30px;
+}
+.buyerProfile #showBox .vipProfile h5{
+	display: inline-block;
+	width: 182px;
+	text-align: right;
+	font-size: 14px;
+	font-weight: normal;
+	color: #666;
+}
+.buyerProfile #showBox .vipProfile i{
+	font-style: normal;
+	color: #ff6600;
+	font-family: '黑体';
+	font-weight: bolder;
+	font-size: 20px;
+}
+.buyerProfile #showBox .vipProfile span{
+	color: #333;
+}
+.buyerProfile #showBox .vipProfile strong{
+	font-weight: normal;
+	margin-left: 5px;
+}
+/*买家中心之个人资料*/
+.PersonalData .PersonalData{
+	font-size: 14px;
+	color: #589325;
+	margin:30px 0 23px 20px;
+}
+.PersonalData form label{
+	display: inline-block;
+	font-size: 14px;
+	width: 162px;
+	text-align: right;
+	color: #666;
+}
+.PersonalData form>div{
+	margin-bottom: 20px;
+}
+.PersonalData form label i{
+	font-style: normal;
+	margin-right: 5px;
+}
+.PersonalData form input[type=text]{
+	display: inline-block;
+	width: 250px;
+	height: 34px;
+}
+.PersonalData form select{
+	display: inline-block;
+	width: 85px;
+	height: 35px;
+}
+.PersonalData form div input[type=checkbox]{
+	margin-left: 10px;
+}
+.PersonalData form div span{
+	font-size: 12px;
+	color: #333;
+}
+.PersonalData form .Landline .Landline1{
+	width: 80px;
+}
+.PersonalData form .Landline .Landline2{
+	width: 170px;
+}
+.PersonalData .PersonalDataBtns,
+.buyerProfile .company .conpanyBtns{
+	display: inline-block;
+	width: 110px;
+	height: 50px;
+	margin:30px 0 82px 163px;
+}
+/*公司资料*/
+.buyerProfile .company .company-title{
+	font-size: 14px;
+	color: #589325;
+	margin:30px 0 20px 20px;
+}
+.buyerProfile .company form>div{
+	margin-bottom: 20px;
+}
+.buyerProfile .company form label{
+	display: inline-block;
+	width: 163px;
+	text-align: right;
+	color: #666;
+	font-size: 14px;
+}
+.buyerProfile .company form input[type=text]{
+	display: inline-block;
+	width: 250px;
+	height: 35px;
+}
+.buyerProfile .company form textarea{
+	display: inline-block;
+	width: 400px;
+	height: 100px;
+	max-width: 400px;
+	max-height: 100px;
+	border-color: #e5e5e5;
+	padding-top: 5px;
+}
+.buyerProfile .company form select{
+	display: inline-block;
+	height: 35px;
+	width: 80px;
+}
+.buyerProfile .company form .imgs{
+	display: inline-block;
+	border:1px dotted #e5e5e5;
+	width: 100px;
+	height: 100px;
+	text-align: center;
+	line-height: 100px;
+	font-size: 98px;
+	vertical-align: top;
+	color: #d1d1d1;
+	cursor: pointer;
+}
+.buyerProfile .company form i{
+	display: block;
+	font-style: normal;
+	margin-left: 173px;
+	font-size: 12px;
+	color: #d1d1d1;
+	margin-top: 10px;
 }
