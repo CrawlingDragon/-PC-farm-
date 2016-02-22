@@ -1427,6 +1427,9 @@
 	font-weight: bolder;
 	cursor: pointer;
 }
+.approveClientele-content #showbox table tr:last-child td{
+	border-bottom: none;
+}
 /*客户管理-级别设置*/
 .customerLevel-box{
 
@@ -2732,28 +2735,88 @@
 	float: left;
 	background: #fff;
 	position: relative;
+	cursor: pointer;
 }
 .messageBox #box1 ul li span{
 	position: absolute;
-	top: 2px;
+	top: 5px;
 	right: 5px;
 	display: inline-block;
 	background: #ff6600;
   	border-radius: 50%;
  	width: 17px;
  	height: 17px;
+ 	text-align: center;
+ 	line-height: 17px;
+ 	color: #fff;
 }
 .messageBox #box1 ul li.active{
 	border:1px solid #e5e5e5;
-	border-top: 2px solid #589325;
+	border-top: 3px solid #589325;
 	margin-bottom: -3px;
 	border-bottom: 1px solid #fff;
 }
 .messageBox .showBox1{
-	width: 1187px;
-	border: 1px solid #e5e5e5;
-}.buyerNav .active a{
+	width: 1194px;
+}
+.buyerNav .active a{
 	color: #589325;
+}
+.systemMessage ul{
+	border-top: 1px solid #e5e5e5;
+}
+.systemMessage ul li{
+	width: 1194px;
+	height: 134px;
+	border:1px solid #e5e5e5;
+	border-top: none;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: flex;
+	-moz-align-items:center;
+	-webkit-align-items: center;
+	-ms-align-items: center;
+	align-items: center;
+	position: relative;
+}
+.systemMessage ul li input[type=checkbox]{
+	margin:0 25px;
+}
+.systemMessage ul li .messagesImg{
+	
+}
+.systemMessage ul li .goodsImg{
+	display: inline-block;
+	width: 75px;
+	height: 75px;
+	border:1px solid  #e4eaee;
+	margin: 0 10px 0 20px;
+}
+.systemMessage ul li .goodsTxt{
+	display: inline-block;
+	color: #666;
+	font-size: 14px;
+}
+.systemMessage ul li .goodsTxt a{
+	display: inline-block;
+	font-size: 12px;
+	margin: 0 5px;
+}
+.systemMessage ul li .goodsTxt .goodsTxt-time{
+	color: #999;
+	margin-bottom: 15px;
+}
+.systemMessage ul li .rightBtns{
+	position: absolute;
+	right: 44px;
+	line-height: 134px;
+}
+.systemMessage ul li .rightBtns a{
+	margin-right: 20px;
+}
+.systemMessage ul li .rightBtns .del{
+	cursor: pointer;
 }
 /*买家中心-安全设置*/
 .buyerSafe form>div{
