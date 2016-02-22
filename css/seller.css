@@ -1421,9 +1421,6 @@
 	color: #333;
 	border-bottom: 1px solid #e5e5e5;
 }
-.approveClientele-content #showbox table tr:last-child td{
-	border-bottom: none;
-}
 .approveClientele-content #showbox table tr .recovery{
 	color: #ff6600;
 	font-size: 14px;
