@@ -205,16 +205,16 @@
 				<div class="rightCont messageBox" style="min-height: auto;border:none;"> <!-- 右边的正文内容 -->
 					<div id="box1">
 						<ul class="clear">
-							<li class="active">系统消息
+							<li>系统消息
 								<span>5</span>
 							</li>
-							<li>消息设置
+							<li class="active">消息设置
 								<span>2</span>
 							</li>
 						</ul>
 					</div>
 					<div class="showBox1">
-						<div class="showCont systemMessage"><!--  系统消息 -->
+						<div class="showCont systemMessage hide"><!--  系统消息 -->
 							<ul>
 								<li>
 									<input type="checkbox" name="" id="">
@@ -231,11 +231,11 @@
 								</li>
 								<li>
 									<input type="checkbox" name="" id="">
-									<img src="images/messageImg2.png" alt="" class="messagesImg">
+									<img src="images/messageImg1.png" alt="" class="messagesImg">
 									<div class="goodsImg"><a href=""><img src="images/goods5.png" alt=""></a></div>
 									<div class="goodsTxt">
 										<div class="goodsTxt-time">2015-05-25<span>10:53:48</span></div>
-										<div class="goodsTxts">发货啦！您购买的<a href="" class="green">梧宁®—四霉素后产物</a>订单卖家已发货</div>
+										<div class="goodsTxts">您购买的<a href="" class="green">梧宁®—四霉素后产物</a>订单卖家已修改货款总额，请及时<a href="" class="green">付款</a></div>
 									</div>
 									<div class="rightBtns orange">
 										<a href="" class="orange">查看详情 </a>
@@ -256,8 +256,115 @@
 									</div>
 								</li>
 							</ul>
+							<div class="systemMessage-bottom">
+								<input type="checkbox" name="" id="">
+								<span>全选</span>
+								<input type="button" value="批量删除">
+								<i class="delAll" id="">清空</i>
+							</div>
 						</div>
-						<div class="showCont hide">2</div>
+						<div class="showCont messageSet"><!-- 消息设置 -->
+							<ul>
+								<li>
+									<strong>物流消息</strong>
+									<span>当订单发货、送货、收货时的消息通知</span>
+									<div class="setRight">
+										<input type="radio" name="name1" id="" checked="checked">
+										<i>是</i>
+										<input type="radio" name="name1" id="">
+										<i>否</i>
+									</div>
+								</li>
+								<li>
+									<strong>评论消息</strong>
+									<span>当你购买的商品在交易成功后，会收到来自卖家评论的消息提醒</span>
+									<div class="setRight">
+										<input type="radio" name="name2" id="" checked="checked">
+										<i>是</i>
+										<input type="radio" name="name2" id="">
+										<i>否</i>
+									</div>
+								</li>
+								<li>
+									<strong>购物车</strong>
+									<span>当你选中的商品在购物车未付款超过一定时间后，会收到购物车提醒付款的提醒</span>
+									<div class="setRight">
+										<input type="radio" name="name3" id="" checked="checked">
+										<i>是</i>
+										<input type="radio" name="name3" id="">
+										<i>否</i>
+									</div>
+								</li>
+								<li>
+									<strong>付款</strong>
+									<span>当你付款成功后，会收到成功付款的信息</span>
+									<div class="setRight">
+										<input type="radio" name="name4" id="" checked="checked">
+										<i>是</i>
+										<input type="radio" name="name4" id="">
+										<i>否</i>
+									</div>
+								</li>
+								<li>
+									<strong>审核反馈</strong>
+									<span>当提交申请后，会收到审核结果的消息提醒</span>
+									<div class="setRight">
+										<input type="radio" name="name5" id="" checked="checked">
+										<i>是</i>
+										<input type="radio" name="name5" id="">
+										<i>否</i>
+									</div>
+								</li>
+								<li>
+									<strong>系统消息</strong>
+									<span>开启将收到系统内部消息</span>
+									<div class="setRight">
+										<input type="radio" name="name6" id="" checked="checked">
+										<i>是</i>
+										<input type="radio" name="name6" id="">
+										<i>否</i>
+									</div>
+								</li>
+								<li>
+									<strong>私信</strong>
+									<span>开启将实现商家和客户之间的沟通交流</span>
+									<div class="setRight">
+										<input type="radio" name="name7" id="" checked="checked">
+										<i>是</i>
+										<input type="radio" name="name7" id="">
+										<i>否</i>
+									</div>
+								</li>
+								<li>
+									<strong>短信接收</strong>
+									<span>当你在电脑端收到的消息，手机端将同步已短信方式接收消息提醒</span>
+									<div class="setRight">
+										<input type="radio" name="name8" id="" checked="checked">
+										<i>是</i>
+										<input type="radio" name="name8" id="">
+										<i>否</i>
+									</div>
+									<span class="setBtn">设置</span>
+								</li>
+								<li>
+									<strong>邮箱接收</strong>
+									<span>当你在电脑端收到的消息，你的邮箱将同步接收消息提醒</span>
+									<div class="setRight">
+										<input type="radio" name="name9" id="" checked="checked">
+										<i>是</i>
+										<input type="radio" name="name9" id="">
+										<i>否</i>
+									</div>
+									<span class="setBtn">设置</span>
+								</li>
+							</ul>
+							<div class="systemMessage-bottom">
+								<input type="checkbox" name="" id="">
+								<span>全选</span>
+								<input type="button" value="批量删除">
+								<i class="delAll" id="">清空</i>
+							</div>
+						</div>
 					</div>
 				</div><!-- 右边内容结束 -->
 			</div>

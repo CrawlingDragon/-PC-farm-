@@ -2736,6 +2736,7 @@
 	background: #fff;
 	position: relative;
 	cursor: pointer;
+	font-weight: bolder;
 }
 .messageBox #box1 ul li span{
 	position: absolute;
@@ -2755,6 +2756,7 @@
 	border-top: 3px solid #589325;
 	margin-bottom: -3px;
 	border-bottom: 1px solid #fff;
+	color: #589325;
 }
 .messageBox .showBox1{
 	width: 1194px;
@@ -2838,6 +2840,77 @@
 .buyerSafe form>div input[type=text]{
 	border:none;
 	margin-left: 50px;
+}
+.systemMessage-bottom{
+	margin-top: 20px;
+	padding-left: 30px;
+	box-sizing:border-box;
+}
+.systemMessage-bottom span{
+	display: inline-block;
+	margin:0 15px 0 10px;
+}
+.systemMessage-bottom input[type=button]{
+	display: inline-block;
+	width: 70px;
+	height: 25px;
+	border:1px solid #e5e5e5;
+	background:#fff;
+	color: #666;
+	font-size: 12px;
+	vertical-align: middle;
+	margin-top: -6px;
+}
+.systemMessage-bottom i{
+	float: right;
+	font-style: none;
+	margin-right: 20px;
+	display: inline-block;
+	width: 46px;
+	height: 22px;
+	text-align: center;
+	line-height: 22px;
+	border:1px solid #e5e5e5;
+	cursor: pointer;
+	color: #666;
+	font-size: 12px;
+}
+.messageSet ul{
+	border:1px solid #e5e5e5;
+	padding-top:50px;
+	padding-bottom: 15px;
+	padding-left: 45px;
+}
+.messageSet ul li{
+	margin-bottom: 40px;
+	font-size: 14px;
+	color: #666;
+}
+.messageSet ul li strong{
+	display: inline-block;
+	width: 60px;
+	text-align: left;
+	margin-right: 15px;
+}
+.messageSet ul li span{
+	font-size: 12px;
+	color: #999;
+}
+.messageSet ul li .setRight{
+	display: inline-block;
+	float: right;
+	margin-right: 245px;
+	font-size: 12px;
+	color: #333;
+}
+.messageSet ul li .setRight i{
+	margin: 0 45px 0 10px;
+}
+.messageSet ul li .setBtn{
+	float: right;
+	margin-right: -354px;
+	color: #ff6600;
+	cursor: pointer;
 }
 /*买家中心-资料*/
 .buyerProfile #box1 ul li{
