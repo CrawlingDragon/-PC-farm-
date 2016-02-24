@@ -3080,3 +3080,260 @@
 	color: #d1d1d1;
 	margin-top: 10px;
 }
+/*收藏的商品*/
+.favoriteProduct form .searchBox{
+	display: inline-block;
+	width: 350px;
+	height: 35px;
+	padding-left: 36px;
+	margin-right: 50px;
+	box-sizing:border-box;
+	background: url(../images/search.png) no-repeat;
+	background-position: 10px 9px;
+}
+.favoriteProduct form select{
+	display: inline-block;
+	width: 80px;
+	height: 25px;
+}
+.favoriteProduct form input[type=button]{
+	display: inline-block;
+	width: 70px;
+	height: 33px;
+	border:none;
+	background:#589325;
+	font-size: 14px;
+	color: #fff;
+	letter-spacing: 8px;
+	text-align: center;
+	padding-left: 7px;
+	margin-left: 50px;
+}
+.favoriteProduct .favoriteTitle{
+	margin:41px 0 30px 13px;
+}
+.favoriteProduct .favoriteTitle input[type=button]{
+	border:1px solid #e5e5e5;
+	width: 70px;
+	height: 24px;
+	margin-left: 10px;
+	background:#fff;
+	font-size: 12px;
+	color: #666;
+}
+.favoriteProduct .goodsList{
+	width: 1238px;
+	height: 723px;
+	clear: both;
+}
+.favoriteProduct .goodsList li{
+	float: left;
+	width: 152px;
+	height: 205px;
+	box-sizing:border-box;
+	margin-right: 52px;
+	margin-bottom: 40px;
+	position: relative;
+}
+.favoriteProduct .goodsList li .imgs{
+	border:1px solid #e5e5e5;
+	width: 152px;
+	height: 152px;
+	overflow: hidden;
+}
+.favoriteProduct .goodsList li .imgs img{
+	width: 100%;
+	height: 100%;
+}
+.favoriteProduct .goodsList li h5{
+	font-size: 12px;
+	color: #333;
+	line-height: 17px;
+	margin-top: 10px;
+	font-weight: normal;
+	width: 152px;
+	display: -webkit-box!important;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	word-break: break-all;
+	-webkit-box-orient:vertical;
+	-webkit-line-clamp:2;
+}
+.favoriteProduct .goodsList li .delImg{
+	position: absolute;
+	bottom: 54px;
+	right: 1px;
+}
+
+.favoriteProduct .storeList li{
+	float: left;
+	width: 486px;
+	min-height: 97px;
+	margin: 0 50px 50px 0;
+	position: relative;
+	font-size: 0;
+}
+.favoriteProduct .storeList li .checkboxs{
+	display: inline-block;
+	height: 97px;
+	width: 46px;
+}
+.favoriteProduct .storeList li input[type=checkbox]{
+	display:block;
+	margin:42px auto;
+}
+.favoriteProduct .storeList li .imgs{
+  display:inline-block;
+  width: 88px;
+  height: 88px;
+  border:1px solid #d5d5d5;
+  border-radius: 13px;
+  background-color: #fff;
+  position: relative;
+  overflow: hidden;
+  vertical-align: top;
+}
+.favoriteProduct .storeList li .imgs img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	margin:auto;
+	width: 100%;
+	height: auto;
+}
+.favoriteProduct .storeList li .rightTxt{
+	display: inline-block;
+	padding-left: 20px;
+	vertical-align: top;
+}
+.favoriteProduct .storeList li .rightTxt h2{
+	width: 300px;
+	margin-bottom: 10px;
+	font-size: 14px;
+	color: #589325;
+}
+.favoriteProduct .storeList li .rightTxt p{
+	font-size: 12px;
+	margin-top: 10px;
+	color: #666;
+}
+.favoriteProduct .storeList li .rightTxt p span{
+	margin-left: 30px;
+}
+.favoriteProduct .storeList li .rightTxt strong{
+	font-size: 14px;
+	color: #ff6600;
+	font-family: '宋体';
+}
+.favoriteProduct .storeList li .delImg{
+	position: absolute;
+	top: 0;
+	right: 0;
+	cursor: pointer;
+}
+/*买家中心-付款*/
+.wealthOrderDetails .paymentCont{
+	height: 134px;
+	padding:25px 0 25px 0; 
+	box-sizing:border-box;
+}
+.wealthOrderDetails .paymentCont .paymentCont-headBar .wealthOrderDetails-headBarbg{
+	background: url(../images/active2.png) no-repeat;
+}
+.paymentWrap .payment-address{
+	color: #589325;
+	font-size: 14px;
+	margin:40px 0 37px 0;
+	font-weight: bolder;
+}
+.paymentWrap .payment-address span,
+.paymentWrap .payment-address i,
+.paymentWrap .payment-address strong{
+	margin-left: 35px;
+	color: #333;
+}
+.paymentWrap .payment-orderNum{
+	margin-bottom: 20px;
+}
+.payment-way #box1{
+	margin-top: 40px;
+}
+.payment-way #box1 li{
+	padding: 13px 28px;
+	font-size: 14px;
+	font-weight: bolder;
+	color: #333;
+	float: left;
+	cursor: pointer;
+}
+.payment-way #box1 li.active{
+	border:1px solid #e5e5e5;
+	border-top: 3px solid #589325;
+	border-bottom: none;
+	background: #fff;
+	margin-bottom: -2px;
+	color: #589325;
+}
+.payment-way #showBox{
+	border:1px solid #e5e5e5;
+	width: 100%;
+	font-size: 0;
+}
+.payment-way #showBox .showCont{
+	padding:30px 0 0 25px;
+}
+.payment-way #showBox .showCont1{
+	height: 173px;
+}
+.payment-way #showBox .showCont1 label{
+	margin-right: 20px;
+}
+.payment-way #showBox label{
+	color: #666;
+	font-size: 14px;
+}
+.payment-way #showBox .showCont1 input[type=radio],
+.payment-way #showBox .showCont1 span{
+	font-size: 14px;
+	font-weight: bolder;
+	color: #333;
+	margin-left: 10px;
+}
+.payment-way #showBox .showCont1 img{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	margin-bottom: -4px;
+	margin-left: 10px;
+}
+.payment-way #showBox .showCont1 span{
+	margin-right: 54px;
+}
+.payment-way #showBox input[type=button]{
+	width: 110px;
+	height: 50px;
+	font-size: 16px;
+	margin-top: 34px;
+}
+.payment-way #showBox .showCont2{
+	height: 242px;
+}
+.payment-way #showBox .showCont div{
+	margin-bottom: 20px;
+}
+.payment-way #showBox .showCont strong{
+	font-size: 16px;
+	font-family: '宋体';
+}
+.payment-way #showBox .showCont2 .setPass{
+	font-size: 12px;
+	margin-left: 12px;
+	cursor: pointer;
+}
+.payment-way #showBox input[type=text]{
+	width: 220px;
+	height: 35px;
+	font-size: 14px;
+}
