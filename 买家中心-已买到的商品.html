@@ -227,7 +227,7 @@
 					<span>&gt;</span>
 					<a href="">安全设置</a>
 				</div> <!-- 所在位置结束 -->
-				<div class="rightCont"> <!-- 右边的正文内容 -->
+				<div class="rightCont buyerboughtGoods"> <!-- 右边的正文内容 -->
 					<h3>已卖出的商品</h3>
 					<form action="">
 						<div class="searchTitle">
@@ -312,10 +312,12 @@
 										<p>查看详情</p>
 									</div>
 									<div class="operate">
-										<input type="button" value="立即发货" class="sendGoods">
+										<a href="javascript:;">等待卖家发货</a>
+										<a href="" class="goPay">付款</a>
 										<input type="button" value="评价">
-										<input type="button" value="修改价格" class="modify">
-										<input type="button" value="关闭订单" class="closeOrder">
+										<input type="button" value="取消订单" class="Cancelorder">
+										<input type="button" value="确认收货" class="confirmReceipt-btn">
+										<a href="#">再次购买</a>
 									</div>
 									<div class="printImg">
 										<img src="" alt="">
@@ -357,10 +359,12 @@
 										<p>查看详情</p>
 									</div>
 									<div class="operate">
-										<input type="button" value="立即发货" class="sendGoods">
+										<a href="javascript:;">等待卖家发货</a>
+										<a href="" class="goPay">付款</a>
 										<input type="button" value="评价">
-										<input type="button" value="修改价格" class="modify">
-										<input type="button" value="关闭订单">
+										<input type="button" value="取消订单" class="Cancelorder">
+										<input type="button" value="确认收货">
+										<a href="#">再次购买</a>
 									</div>
 									<div class="printImg">
 										<img src="" alt="">
@@ -420,10 +424,12 @@
 										<p>查看详情</p>
 									</div>
 									<div class="operate">
-										<input type="button" value="立即发货" class="sendGoods">
+										<a href="javascript:;">等待卖家发货</a>
+										<a href="" class="goPay">付款</a>
 										<input type="button" value="评价">
-										<input type="button" value="修改价格" class="modify">
-										<input type="button" value="关闭订单">
+										<input type="button" value="取消订单" class="Cancelorder">
+										<input type="button" value="确认收货">
+										<a href="#">再次购买</a>
 									</div>
 									<div class="printImg">
 										<img src="" alt="">
@@ -574,7 +580,53 @@ $(document).ready(function(){
 		});
 	});
 
-	$(".delet").click(function(){  //修改价格按钮弹出
+	$(".confirmReceipt-btn").click(function(){  //确认收货按钮弹出
+	layer.open({
+		    type: 1,
+		    title:false,
+		    skin: 'layer-delet', //样式类名
+		    closeBtn: 0, //不显示关闭按钮
+		    shift: 0,
+		    area: ['490px', '152px'],
+		    shadeClose: false, //开启遮罩关闭
+		    content: '<div class="deletCont"><p>请收到货后，再确认收货！</p><p><label>确认删除此订单:</label><input type="button" value="确认" class="deletBtn1"><input type="button" value="取消" class="deletBtn2"></p></div>',
+		    success:function(layero, index){
+		    	$(".deletBtn2").click(function(){ //取消按钮
+		    		layer.closeAll('page');
+		    	});
+		    	$(".deletBtn1").click(function(){ //确定按钮
+		    		layer.closeAll('page');
+		    		alert("删除成功！")
+		    	});
+		    }
+		});
+	});
+
+	$(".Cancelorder").click(function(){  //取消订单按钮弹出
+		_this = $(this).parent();
+		_prev = _this.prev();
+	layer.open({
+		    type: 1,
+		    title:false,
+		    skin: 'layer-delet', //样式类名
+		    closeBtn: 0, //不显示关闭按钮
+		    shift: 0,
+		    area: ['490px', '211px'],
+		    shadeClose: false, //开启遮罩关闭
+		    content: '<div class="deletCont CancelorderCont"><p>取消订单后，将不能恢复，请确认订单取消原因</p><div class="Cancelorder-p"><label>请选择原因：</label><select name="" id=""><option value="">取消订单的原因1</option><option value="">取消订单的原因2</option></select></div><p><input type="button" value="确认" class="closeBtn1" id="CancelBtn1"><input type="button" value="取消" class="closeBtn2"></p></div>',
+		    success:function(layero, index){
+		    	$(".closeBtn2").click(function(){ //取消按钮
+		    		layer.closeAll('page');
+		    	});
+		    	$(".closeBtn1").click(function(){ //确定按钮
+		    		_prev.html("<p>交易关闭</p>")
+		    		layer.closeAll('page');
+		    		alert("订单取消成功！")
+		    	});
+		    }
+		});
+	});
+$(".delet").click(function(){  //删除订单按钮弹出
 		var id = $(this).parent('h4').find('a span').html();
 		var _this = $(this).parent().parent();
 	layer.open({
@@ -598,33 +650,6 @@ $(document).ready(function(){
 		    }
 		});
 	});
-
-	$(".closeOrder").click(function(){  //修改价格按钮弹出
-		_this = $(this).parent();
-		_prev = _this.prev();
-	layer.open({
-		    type: 1,
-		    title:false,
-		    skin: 'layer-delet', //样式类名
-		    closeBtn: 0, //不显示关闭按钮
-		    shift: 0,
-		    area: ['490px', '152px'],
-		    shadeClose: false, //开启遮罩关闭
-		    content: '<div class="deletCont"><p>买家还未付款，确认关闭订单，此订单将失效</p><p><label>确认关闭此订单:</label><input type="button" value="确认" class="closeBtn1"><input type="button" value="取消" class="closeBtn2"></p></div>',
-		    success:function(layero, index){
-		    	$(".closeBtn2").click(function(){ //取消按钮
-		    		layer.closeAll('page');
-		    	});
-		    	$(".closeBtn1").click(function(){ //确定按钮
-		    		_this.hide();
-		    		_prev.html("<p>交易关闭</p>")
-		    		layer.closeAll('page');
-		    		alert("订单关闭成功！")
-		    	});
-		    }
-		});
-	});
-
 
 });
 
