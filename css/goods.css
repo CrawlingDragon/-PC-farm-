@@ -1,0 +1,108 @@
+.goodsList-Cont{
+	clear: both;
+	width: 992px;
+	float: left;
+}
+.goodsList-Cont .goodsList-topBox{
+	display: block;
+	height: 54px;
+	line-height: 54px;
+	font-size: 12px;
+	color: #999;
+	
+	box-sizing:border-box;
+}
+.goodsList-Cont .goodsList-topBox a,
+.goodsList-Cont .goodsList-topBox .leftHook{
+	font-size: 12px;
+	color: #999;
+	margin-right: 15px;
+}
+.goodsList-Cont .goodsList-topBox form{
+	display: inline-block;
+}
+.goodsList-Cont .goodsList-topBox form input[type=text]{
+	margin-left: 5px;
+	display: inline-block;
+	width: 165px;
+	height: 30px;
+	padding-left: 30px;
+	box-sizing:border-box;
+	background: url(../images/search.png) no-repeat;
+	background-position: 7px 7px;
+	line-height: 30px;
+	border:1px solid #e5e5e5;
+}
+.goodsList-Cont .goodsList-topBox form input[type=button]{
+	margin-left: -8px;
+	display: inline-block;
+	width: 45px;
+	height: 30px;
+	border:1px solid #e5e5e5;
+	border-left: none;
+	background:none;
+	color: #999;
+}
+.goodsList-Cont .goodsList-topBox .right-txt{
+	display: inline-block;
+	float: right;
+	margin-right: 20px;
+}
+.goodsList-Cont .goodsList-topBox .right-txt span{
+	font-size: 12px;
+	color: #fe5503;
+	margin:0 8px 0 8px;
+}
+.goodsList-Cont .goodsNav-box{
+	width: 100%;
+	height: auto;
+	border:1px solid #e5e5e5;
+}
+.goodsList-Cont .goodsNav-box .goodsWrap{
+	width: 960px;
+	min-height: 63px;
+	height: auto;
+	border-bottom:1px dotted #e5e5e5;
+	margin-left: 20px;
+	font-size: 0;
+	position: relative;
+}
+.goodsList-Cont .goodsNav-box .goodsWrap:last-child{
+	border-bottom:none;
+}
+.goodsList-Cont .goodsNav-box .goodsWrap h2{
+	display: inline-block;
+	width: 96px;
+	text-align: right;
+	margin-right: 25px;
+	margin-top: 20px;
+	font-size: 14px;
+	color: #999;
+	font-weight: normal;
+	vertical-align: top;
+}
+.goodsList-Cont .goodsNav-box .goodsWrap .goodsNav-list{
+	display: inline-block;
+	width: 752px;
+	padding-top: 13px;
+    padding-bottom: 10px;
+}
+.goodsList-Cont .goodsNav-box .goodsWrap .goodsNav-list a{
+	font-size: 14px;
+	display: inline-block;
+	line-height: 30px;
+	margin-right: 55px;
+	color: #333;
+	margin-bottom: 15px;
+}
+.goodsList-Cont .goodsNav-box .goodsWrap .goodsNav-list a:hover{
+	color: #ff6600;
+}
+.goodsList-Cont .goodsNav-box .goodsWrap .showBtn{
+	position: absolute;
+	top: 25px;
+	right: 14px;
+	font-size: 12px;
+	color: #999;
+	cursor: pointer;
+}
