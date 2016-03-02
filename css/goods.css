@@ -185,6 +185,10 @@
 	height: 30px;
 	border:1px solid #e5e5e5;
 }
+.goodsList-ul{
+	width: 100%;
+	min-height:1935px;
+}
 .goodsList-ul li{
 	margin:0 15px 0 5px;
 	float: left;
