@@ -374,3 +374,307 @@
 	line-height: 50px;
 
 }
+/*店内搜索*/
+.goodsDetail-bottomBox{
+	width: 100%;
+	height: auto;
+	margin-top: 20px;
+}
+.goodsDetail-bottomBox .leftBar{
+	width: 200px;
+	float: left;
+	font-size: 12px;
+	color: #333;
+	height: auto;
+}
+.goodsDetail-bottomBox .leftBar .storeSearch-box{
+	width: inherit;
+	border:1px solid #e5e5e5;
+	padding-bottom: 10px;
+}
+.goodsDetail-bottomBox .leftBar h5{
+	width: inherit;
+	text-indent: 20px;
+	height: 40px;
+	font-size: 14px;
+	color: #666;
+	line-height: 40px;
+	border-bottom:1px solid #e5e5e5;
+	background: #f8f8f8;
+	margin-bottom: 10px;
+}
+.goodsDetail-bottomBox .leftBar .storeSearch-box label{
+	display: inline-block;
+	width: 68px;
+	text-align: right;
+}
+.goodsDetail-bottomBox .leftBar .storeSearch-box form div{
+	margin-bottom: 10px;
+}
+.goodsDetail-bottomBox .leftBar .storeSearch-box input[type=text]{
+	display: inline-block;
+	width: 45px;
+	height: 30px;
+	border:1px solid #e5e5e5;
+}
+.goodsDetail-bottomBox .leftBar .storeSearch-box input[type=button]{
+	display: inline-block;
+	width: 50px;
+	height: 30px;
+	border:1px solid #e5e5e5;
+	background: #f8f8f8;
+}
+.leftBar .storeSort-box{
+	width: inherit;
+	height: auto;
+	padding-bottom: 10px;
+	border:1px solid #e5e5e5;
+	margin-top: 20px;
+}
+.leftBar .storeSort-box p{
+	text-indent: 20px;
+	margin-bottom: 15px;
+	margin-top: 10px;
+}
+.leftBar .recommendHot-box{
+	margin-top: 20px;
+	border:1px solid #e5e5e5;
+	width: inherit;
+	height: auto;
+}
+.leftBar .recommendHot-box .recommendHot-list{
+	width: 150px;
+	height: auto;
+	margin:0 auto;
+	margin-bottom: 35px;
+}
+.leftBar .recommendHot-box .recommendHot-list .imgs{
+	width: 150px;
+	height: 150px;
+	overflow: hidden;
+	margin-bottom: 10px;
+}
+.leftBar .recommendHot-box .recommendHot-list .imgs img{
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+}
+.leftBar .recommendHot-box .recommendHot-list p{
+	width: 150px;
+	overflow: hidden;
+}
+.rightBar{
+	float: right;
+	width: 980px;
+	height: auto;
+}
+.rightBar #box2{
+	width: inherit;
+	height: 40px;
+	line-height: 40px;
+	background: #f8f8f8;
+	border:1px solid #e5e5e5;
+	border-left: none;
+}
+.rightBar #box2 ul li{
+	float: left;
+	padding:0 25px;
+	cursor: pointer;
+	line-height: 40px;
+}
+.rightBar #box2 ul li.active{
+	border-top: 2px solid #ff6600;
+	height: 45px;
+	background: #fff;
+	color: #ff6600;
+	margin-top: -5px;
+	padding-top: 5px;
+	border-left: 1px solid #e5e5e5;
+	border-right: 1px solid #e5e5e5;
+}
+#showBox .showCont{
+	width: inherit;
+	height: auto;
+	margin-top: 5px;
+	background: #fff;
+}
+#showBox .cont1{
+	border:none;
+}
+#showBox .cont1 .cont1-top{
+	border:1px solid #e5e5e5;
+	width: inherit;
+	height: 140px;
+	box-sizing:border-box;
+	padding:30px 0 0 51px;
+	font-size: 12px;
+	color: #333;
+}
+#showBox .cont1 .cont1-top table tr td{
+	width: 342px;
+	padding-bottom: 17px;
+}
+#showBox .cont1 .cont1-bottom{
+	font-size: 12px;
+	color: #666;
+	padding:25px 0 0 20px;
+}
+#showBox .cont1 .cont1-bottom h2{
+	font-weight: normal;
+	margin-bottom: 35px;
+}
+#showBox .cont1 .cont1-bottom h5{
+	font-weight: normal;
+	margin-bottom: 10px;
+}
+#showBox .cont1 .cont1-bottom .txt{
+	line-height: 20px;
+	margin-bottom: 40px;
+}
+#showBox .cont1 .cont1-bottom .imgBox{
+	width: inherit;
+	height: auto;
+	padding:20px 0;
+	background: #f8f8f8;
+	position: relative;
+	min-height: 500px;
+}
+#showBox .cont1 .cont1-bottom .imgBox img{
+	display: block;
+	width: auto;
+	height: auto;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+#showBox .cont3 .cont3-top{
+	width: 100%;
+	height: 141px;
+	box-sizing:border-box;
+	border:1px solid #e5e5e5;
+	font-size: 12px;
+	padding:30px 0 50px 30px;
+}
+#showBox .cont3 .cont3-top .cont3-top-before{
+	float: left;
+	margin-top: 30px;
+}
+#showBox .cont3 .cont3-top .cont3-top-left{
+	float: left;
+	color: #333;
+	margin-top: -15px;
+	margin-right: 70px;
+}
+#showBox .cont3 .cont3-top .cont3-top-left strong{
+	font-size: 80px;
+	font-family: '黑体';
+	color: #ff6600;
+}
+#showBox .cont3 .cont3-top .cont3-top-left i{
+	color: #ff6600;
+	font-size: 25px;
+	font-family: '黑体';
+	
+}
+#showBox .cont3 .cont3-top .cont3-top-mid{
+	float: left;
+	font-size: 12px;
+	color: #666;
+	margin-right: 80px;
+}
+#showBox .cont3 .cont3-top .cont3-top-mid tr td{
+	padding-bottom: 10px;
+}
+#showBox .cont3 .cont3-top .cont3-top-mid tr td span{
+	color: #ff6600;
+	font-size: 14px;
+	font-weight: bolder;
+	font-family: '黑体';
+}
+#showBox .cont3 .cont3-top .cont3-top-right{
+	float: left;
+	width: 385px;
+	padding-top: 17px;
+}
+#showBox .cont3 .cont3-top .cont3-top-right ul li{
+	float: left;
+	border:1px solid #e5e5e5;
+	padding:4px 10px;
+	margin-bottom: 7px;
+	margin-right: 20px;
+}
+#showBox .cont3 .cont3-title{
+	width: inherit;
+	height: 39px;
+	line-height: 39px;
+	padding-left: 30px;
+	box-sizing:border-box;
+	background: #f8f8f8;
+	border:1px solid #e5e5e5;
+	border-top: none;
+}
+#showBox .cont3 .cont3-title label{
+	margin-right: 30px;
+	line-height: 39px;
+}
+#showBox .cont3 .cont3-title input[type=radio]{
+	vertical-align: middle;
+}
+#showBox .cont3 .cont3-cont{
+	width: inherit;
+	height: auto;
+}
+#showBox .cont3 .cont3-cont ul{
+	width: 100%;
+	display:block;
+	min-height: 65px;
+	display: block;
+	padding:37px 0 40px 36px;
+	border-bottom: 1px solid #e5e5e5;
+	font-size: 12px;
+	color: #666;
+}
+#showBox .cont3 .cont3-cont ul li{
+	float: left;
+	height: auto;
+}
+#showBox .cont3 .cont3-cont ul li .imgs{
+  width: 32px;
+  height: 32px;
+  border-radius: 100%;
+  margin-top: -8px;
+  overflow: hidden;
+}
+#showBox .cont3 .cont3-cont ul li .imgs img{
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+}
+#showBox .cont3 .cont3-cont ul li.names{
+	width: 120px;
+	text-align: left;
+	margin-left: 13px;
+}
+#showBox .cont3 .cont3-cont ul li.good{
+	width: 30px;
+	margin-right: 66px;
+}
+#showBox .cont3 .cont3-cont ul li.txt{
+	width: 470px;
+	margin-right: 70px;
+}
+#showBox .cont3 .cont3-cont ul li.txt .EvaluationCont{
+	line-height: 22px;
+	margin-bottom: 15px;
+	margin-top: -5px;
+}
+#showBox .cont3 .cont3-cont ul li.txt .times span{
+	margin-right: 12px;
+}
+#showBox .cont3 .cont3-cont ul li.nums{
+	width: 146px;
+}
+#showBox .cont3 .cont3-cont ul li.nums div{
+	margin-bottom: 10px;
+}

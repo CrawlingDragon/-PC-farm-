@@ -206,7 +206,7 @@ $(function(){
 	var moveTime = 300; //移动速度,毫秒
 	var scrollDiv = $(".spec-scroll .items ul"); //进行移动动画的容器
 	var scrollItems = $(".spec-scroll .items ul li"); //移动容器里的集合
-	var moveLength = scrollItems.eq(0).width() * moveNum; //计算每次移动的长度
+	var moveLength = scrollItems.eq(0).width() * moveNum+20; //计算每次移动的长度
 	var countLength = (scrollItems.length - viewNum) * scrollItems.eq(0).width(); //计算总长度,总个数*单个长度
 	  
 	//下一张
