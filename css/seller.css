@@ -2652,7 +2652,7 @@
 }
 .sellerIndex .sellerIndex-left .sellerIndex-leftCont{
 	float: left;
-	width: 592px;
+	width: 680px;
 	height: 100%;
 	font-size: 12px;
 }
@@ -2674,6 +2674,16 @@
 }
 .sellerIndex .sellerIndex-left .sellerIndex-leftCont .leftCont-midden div h5{
 	display: inline-block;
+}
+.sellerIndex .sellerIndex-left .sellerIndex-leftCont .leftCont-midden div .showMoney{
+	cursor: default;
+}
+.sellerIndex .sellerIndex-left .sellerIndex-leftCont .leftCont-midden span.active{
+	display: inline-block;
+	background:url(../images/moneybj.jpg);
+	width:54px;
+	height:21px;
+	vertical-align: middle;
 }
 .sellerIndex .sellerIndex-left .sellerIndex-leftCont .leftCont-midden span{
 	font-family: '微软雅黑';

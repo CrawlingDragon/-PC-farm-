@@ -240,14 +240,14 @@
 									<span class="orange">¥0.00</span>
 									<a href="">充值</a>|
 									<a href="">提现</a>|
-									<i>隐藏金额</i>
+									<i class="showMoney">隐藏金额</i>
 								</div>
 								<div>
 									<h5>红包：</h5>
 									<span class="orange">¥0.00</span>
 									<a href="">充值</a>|
 									<a href="">提现</a>|
-									<i>显示金额</i>
+									<i class="showMoney">隐藏金额</i>
 								</div>
 							</div>	
 							<div class="leftCont-bottom">
@@ -612,6 +612,31 @@ $(document).ready(function(){
 		    }
 		});
 	});
+
+
+
+
+
+//显示金额
+$('.showMoney').click(function(){
+	var thisTxt = $(this).text();
+ 	var childrenTxt = $(this).parent().children().eq(1)
+ 	if(thisTxt == "显示金额"){
+		childrenTxt.text("¥0.00");
+		$(this).text("隐藏金额");
+		childrenTxt.removeClass('active');
+		console.log(childrenTxt.text());
+ 	}else{
+ 		$(this).text("显示金额");
+ 		childrenTxt.text("");
+ 		childrenTxt.addClass('active');
+ 		console.log(childrenTxt.text());
+ 	}
+})
+
+
+
+//显示金额end
 
 
 });
