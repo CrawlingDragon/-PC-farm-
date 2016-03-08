@@ -255,7 +255,7 @@
 							<div class="imgs"><img src="images/sellerIndex.jpg" alt=""></div>
 							<a href="">编辑资料</a>
 						</div>
-						<div class="sellerIndex-leftCont">
+						<div class="sellerIndex-leftCont" style="width: 595px">
 							<h4>亲爱的掌柜：<span>139***449</span></h4>
 							<div class="leftCont-top"><a href="">账户安全设置</a><a href="">子账号设置</a><a href="">银行卡(3)</a></div>
 							<div class="leftCont-midden">
@@ -264,14 +264,14 @@
 									<span class="orange">¥0.00</span>
 									<a href="">充值</a>|
 									<a href="">提现</a>|
-									<i>隐藏金额</i>
+									<i class="showMoney">隐藏金额</i>
 								</div>
-								<div>
+								<div style="margin-right: 0;">
 									<h5>红包：</h5>
 									<span class="orange">¥0.00</span>
 									<a href="">充值</a>|
 									<a href="">提现</a>|
-									<i>显示金额</i>
+									<i class="showMoney">隐藏金额</i>
 								</div>
 							</div>	
 							<div class="leftCont-bottom">
@@ -292,17 +292,33 @@
 								<dd><h5>宁波金泰惠多利农资连锁有限公司</h5></dd>
 								<dd style="margin-bottom: 15px;">会员号：12345678987654321</dd>
 								<dd>卖家类型：<span>厂家</span></dd>
-								<dd>描述相符：<span>4.9</span>分
+								<dd>描述相符：<span class="f14 orange fb">4.9</span>分
 								<i>
-									<img src="images/start.png" alt="">
-									<img src="images/start.png" alt="">
-									<img src="images/start.png" alt="">
-									<img src="images/start.png" alt="">
-									<img src="images/start.png" alt="">
+									<img src="images/start2.png" alt="">
+									<img src="images/start2.png" alt="">
+									<img src="images/start2.png" alt="">
+									<img src="images/start2.png" alt="">
+									<img src="images/start2.png" alt="">
 								</i>
 								</dd>
-								<dd>服务态度：<span>4.9</span>分<i><img src="" alt=""><img src="" alt=""><img src="" alt=""><img src="" alt=""><img src="" alt=""></i></dd>
-								<dd>发货速度：<span>4.9</span>分<i><img src="" alt=""><img src="" alt=""><img src="" alt=""><img src="" alt=""><img src="" alt=""></i></dd>
+								<dd>服务态度：<span class="f14 orange fb">4.9</span>分
+									<i>
+										<img src="images/start2.png" alt="">
+										<img src="images/start2.png" alt="">
+										<img src="images/start2.png" alt="">
+										<img src="images/start2.png" alt="">
+										<img src="images/start2.png" alt="">
+									</i>
+								</dd>
+								<dd>发货速度：<span class="f14 orange fb">4.9</span>分
+									<i>
+										<img src="images/start2.png" alt="">
+										<img src="images/start2.png" alt="">
+										<img src="images/start2.png" alt="">
+										<img src="images/start2.png" alt="">
+										<img src="images/start2.png" alt="">
+									</i>
+								</dd>
 							</dl>
 						</div>
 					</div>
@@ -324,14 +340,13 @@
 							<ul class="listBox"> <!-- 一个订单开始 -->
 								<h4>
 									<a href="">
-										<input type="checkbox" name="" id="">
 										<span>1407241453498101</span>
 										<span>2015-05-28 14:53:48 </span>
 										<span>买家：王思聪</span>	
 									</a>
 									<div class="delet"><img src="images/delete.png" alt=""></div>
 								</h4>
-								<div class="listCont clear">
+								<div class="listCont clear" id="adc">
 									<div class="goodsInfo">
 										<div class="goods1">
 											<div><a href=""><img src="images/goods5.png" alt=""></a></div>
@@ -370,15 +385,14 @@
 										<input type="button" value="修改价格" class="modify">
 										<input type="button" value="关闭订单" class="closeOrder">
 									</div>
-									<div class="printImg">
-										<img src="" alt="">
+									<div class="printImg" onclick=" a()">
+										<img src="images/print.png" alt="">
 									</div>
 								</div>
 							</ul><!-- 一个订单结束 -->
 							<ul class="listBox"> <!-- 一个订单开始 -->
 								<h4>
 									<a href="">
-										<input type="checkbox" name="" id="">
 										<span>1407241453498101</span>
 										<span>2015-05-28 14:53:48 </span>
 										<span>买家：王思聪</span>	
@@ -416,14 +430,13 @@
 										<input type="button" value="关闭订单">
 									</div>
 									<div class="printImg">
-										<img src="" alt="">
+										<img src="images/print.png" alt="">
 									</div>
 								</div>
 							</ul><!-- 一个订单结束 -->
 							<ul class="listBox"> <!-- 一个订单开始 -->
 								<h4>
 									<a href="">
-										<input type="checkbox" name="" id="">
 										<span>1407241453498101</span>
 										<span>2015-05-28 14:53:48 </span>
 										<span>买家：王思聪</span>	
@@ -479,7 +492,7 @@
 										<input type="button" value="关闭订单">
 									</div>
 									<div class="printImg">
-										<img src="" alt="">
+										<img src="images/print.png" alt="">
 									</div>
 								</div>
 							</ul><!-- 一个订单结束 -->
@@ -555,16 +568,23 @@ $(".shopTitle").click(function(){
 	$(".shopContent").toggle(function(){});
 });
 
-// 日历1
-laydate({
-   elem: '#time1',  
-});
-
-// 日历2
-laydate({
-   elem: '#time2',
-});
-
+//显示金额
+$('.showMoney').click(function(){
+	var thisTxt = $(this).text();
+ 	var childrenTxt = $(this).parent().children().eq(1)
+ 	if(thisTxt == "显示金额"){
+		childrenTxt.text("¥0.00");
+		$(this).text("隐藏金额");
+		childrenTxt.removeClass('active');
+		console.log(childrenTxt.text());
+ 	}else{
+ 		$(this).text("显示金额");
+ 		childrenTxt.text("");
+ 		childrenTxt.addClass('active');
+ 		console.log(childrenTxt.text());
+ 	}
+})
+//显示金额end
 $(document).ready(function(){  
 	$(".sendGoods").click(function(){  //立即发货按钮弹出
 	layer.open({
@@ -663,8 +683,10 @@ $(document).ready(function(){
 		});
 	});
 
+	
 
 });
+
 </script>
 </body>
 </html>
