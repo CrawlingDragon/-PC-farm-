@@ -185,6 +185,7 @@
 	margin-left: 60px;
 }
 .rightPart .tableBox .listBox .listCont .printImg{
+	display: inline-block;
 	width: 16px;
 	height: 15px;
 	cursor: pointer;
