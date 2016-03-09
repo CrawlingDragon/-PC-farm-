@@ -11,7 +11,29 @@ sup { vertical-align:text-top; }
 sub{ vertical-align:text-bottom; } 
 legend { color:#000; } 
 fieldset, img { border:0; } 
-button, input, select, textarea { font-size:100%; } 
+select {
+	*background: none;
+  /*Chrome和Firefox里面的边框是不一样的，所以复写了一下*/
+  border: solid 1px #000;
+
+  /*很关键：将默认的select选择框样式清除*/
+  appearance:none;
+  -moz-appearance:none;
+  -webkit-appearance:none;
+
+  /*在选择框的最右侧中间显示小箭头图片*/
+  background: url("http://ourjs.github.io/static/2015/arrow.png") no-repeat scroll right center transparent;
+
+
+  /*为下拉小箭头留出一点位置，避免被文字覆盖*/
+  padding-right: 14px;
+  padding-right: 0px\9;
+}
+
+
+/*清除ie的默认选择框样式清除，隐藏下拉箭头*/
+select::-ms-expand { display: none; }
+button, input, select, textarea { font-size:100%;vertical-align:middle } 
 table { border-collapse:collapse; border-spacing:0; }
 ul,dl{font-size:0;}
 ul li,dl dd{
@@ -104,16 +126,80 @@ header .header-left{
 	float: left;
 	line-height: 31px;
 	height: inherit;
+	width: 129px;
+	box-sizing:border-box;
 }
-header .header-left a{
+header .header-left .message-title{
 	display: inline-block;
 	width: 107px;
 	height: 32px;
 	background: url(../images/bj.png) no-repeat;
-	background-position: -28px -24px;
-	padding-left: 22px;
+	background-position: -124px -28px;
 }
-header .header-left a p span{color:#ff6600;}
+header .header-left .message-title.active{
+	background: url(../images/bj2.png) no-repeat;
+	background-position: 99px 12px;
+}
+header .header-left .message-title img{
+	vertical-align: middle;
+	margin-top: -1px;
+	margin-right: 10px;
+	margin-left: 2px;
+}
+header .header-left a div .messageNum{
+	color:#ff6600;
+	margin-left: 5px;
+}
+.header-left .messageBox{
+	background: #fff;
+	width: 234px;
+	height: 208px;
+	border:1px solid #e5e5e5;
+	border-top: none;
+	position: relative;
+	z-index: 9999999999999;
+	padding:0 8px;
+	box-sizing:border-box;
+	margin-top: -1px;
+	margin-left: -1px;
+}
+.header-left .messageBox li{
+	border-bottom: 1px solid #e5e5e5;
+	height: 59px;
+	overflow: hidden;
+	padding:15px 0;
+	box-sizing:border-box;
+	font-size: 12px;
+	color: #999;
+	width: 100%;
+}
+.header-left .messageBox li:hover{
+	background: #f5f8fa;
+}
+.header-left .messageBox li:last-child{
+	border-bottom: none;
+}
+.header-left .messageBox li>div{
+	line-height: 15px;
+	width: 100%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.header-left .messageBox .messageSet{
+	float: left;
+	font-size: 12px;
+	color: #999;
+	width: 110px;
+	text-indent: 22px;
+	background: url(../images/set.png) no-repeat;
+	background-position: 3px 7px;
+}
+.header-left .messageBox .messageAll{
+	float: right;
+	font-size: 12px;
+	color: #666;
+}
 header .header-right{
 	float: right;
 	height: inherit;
@@ -122,25 +208,99 @@ header .header-right{
 header .header-right ul li{
 	display: inline-block;
 	line-height: 31x;
-	margin-right: 18px;
+	padding:0 15px;
+	position: relative;
+	margin-right: 15px;	
+	font-size: 12px;
+	box-sizing:border-box;
 }
-header .header-right ul li:nth-child(1) a{
-	color: #ff6600;
+
+header .header-right ul li.list1 a{
+	background: url(../images/bj.png) no-repeat;
+	background-position: -166px -28px;
+	padding-right: 20px;
+	line-height: 31px;
+	cursor: pointer;
 }
-header .header-right ul li:nth-child(3){
+header .header-right ul li .list-title.active{
+	background: url(../images/bj2.png) no-repeat;
+	background-position: 55px 13px;
+}
+
+header .header-right ul li.list3 .list-title.active{
+	background: url(../images/bj2.png) no-repeat;
+	background-position: 43px 13px;
+}
+header .header-right ul li.list2 .list-title.active,
+header .header-right ul li.list4 .list-title.active{
+	background: url(../images/bj2.png) no-repeat;
+	background-position: 51px 13px;
+}
+header .header-right ul li.list1 .list1-cont,
+header .header-right ul li.list2 .list1-cont,
+header .header-right ul li.list3 .list1-cont,
+header .header-right ul li.list4 .list1-cont{
+	position: absolute;
+	height: auto;
+	width: 104px;
+	top: 30px;
+	left: -1px;
+	background: #fff;
+	padding:10px 0;
+	z-index: 999999999;
+	border:1px solid #e5e5e5;
+	border-top: none;
+}
+header .header-right ul li .list1-cont li{
+	width: 100%;
+	padding:0;
+	height: 18px;
+	line-height: 18px;
+	padding: 0;
+	margin:0;
+	border:none;
+	padding-left: 15px;
+	box-sizing:border-box;
+}
+header .header-right ul li.list1 .list1-cont li a,
+header .header-right ul li.list2 .list1-cont li a,
+header .header-right ul li.list3 .list1-cont li a,
+header .header-right ul li.list4 .list1-cont li a{
+	background: none;
+	height: 100%;
+	display: inline-block;
+	padding:0;
+	line-height: 18px;
+	color: #333;
+}
+header .header-right ul li .list1-cont li:hover{
+	background: #ff6600;
+}
+header .header-right ul li .list1-cont li:hover a{
+	color: #fff;
+}
+header .header-right ul li.list2 a{
 	background: url(../images/bj.png) no-repeat;
 	background-position: -172px -28px;
 	padding-right: 12px;
 }
-header .header-right ul li:nth-child(4){
+header .header-right ul li.list3 a{
 	background: url(../images/bj.png) no-repeat;
 	background-position: -184px -28px;
 	padding-right: 16px;
 }
-header .header-right ul li:nth-child(5){
+header .header-right ul li.list4 a{
 	background: url(../images/bj.png) no-repeat;
 	background-position: -173px -28px;
 	padding-right: 16px;
+}
+header .header-right ul li.active,
+header .header-right ul li.active,
+header .header-right ul li.active,
+header .header-right ul li.active{
+	background: #fff;
+	border-left: 1px solid #e5e5e5;
+	border-right: 1px solid #e5e5e5;
 }
 header .header-right ul li:last-child{
 	margin:0;
@@ -262,15 +422,15 @@ header .searchBox .goodsCar a p span{
 	font-weight: bold;
 }
 /*卖家中心头部*/
-header .sellerNav{
+ .sellerNav{
 	width: 1190px;
 	margin:0 auto;
 }
-header .sellerNav dl{
+ .sellerNav dl{
 	width: 1042px;
 	float: left;
 }
-header .sellerNav dl dt,header .sellerNav dl dd{
+ .sellerNav dl dt,header .sellerNav dl dd{
 	float: left;
 	font-size: 16px;
 	color: #000;
@@ -278,15 +438,15 @@ header .sellerNav dl dt,header .sellerNav dl dd{
 	line-height: 39px;
 	font-weight: bold;
 }
-header .sellerNav dl a{
+.sellerNav dl a{
 	display: inline-block;
 	padding:0 24px;
 }
-header .sellerNav .areaShops{
+ .sellerNav .areaShops{
 	float: right;
 	position: relative;
 }
-header .sellerNav .areaShops .shopTitle{
+ .sellerNav .areaShops .shopTitle{
 	width: 126px;
 	height: 39px;
 	text-indent: 19px;
@@ -297,9 +457,9 @@ header .sellerNav .areaShops .shopTitle{
 	background: #fff;
     cursor: pointer;
     position: relative;
-    z-index: 111;
+    z-index: 9999999999999;
 }
-header .sellerNav .areaShops .shopTitle>div{
+ .sellerNav .areaShops .shopTitle>div{
 	width: 100%;
 	height: 100%;
 	background: #fff;
@@ -307,7 +467,7 @@ header .sellerNav .areaShops .shopTitle>div{
 	background: url(../images/bj.png) no-repeat;
 	background-position: -307px -23px;
 }
-header .sellerNav .areaShops .shopContent{
+ .sellerNav .areaShops .shopContent{
 	position: absolute;
 	top: 39px;
 	left: -171px;
@@ -315,10 +475,11 @@ header .sellerNav .areaShops .shopContent{
 	height: 362px;
 	border:1px solid #e5e5e5;
 	background: #fff;
-	z-index: 11;
+	z-index: 999999999;
+	font-size: 0;
 	display: none;
 }
-header .sellerNav .areaShops .shopContent select{
+ .sellerNav .areaShops .shopContent select{
 	width: 80px;
 	height: 36px;
 	border:1px solid #e5e5e5;
@@ -326,40 +487,40 @@ header .sellerNav .areaShops .shopContent select{
 	font-size: 14px;
 	margin: 12px 5px;
 }
-header .sellerNav .areaShops .shopContent select:nth-child(1){
+ .sellerNav .areaShops .shopContent select:first-child{
 	margin-left: 18px;
 }
-header .sellerNav .areaShops .shopContent dl dd p{
+ .sellerNav .areaShops .shopContent dl dd p{
 	display: inline-block;
 }
-header .sellerNav .areaShops .shopContent dl{
+ .sellerNav .areaShops .shopContent dl{
 	width: 298px;
 	clear: both;
 }
-header .sellerNav .areaShops .shopContent dl dd{
+ .sellerNav .areaShops .shopContent dl dd{
 	clear: both;
 	font-size: 12px;
 	height: 33px;
 	line-height: 33px;
 	width: 296px;
 }
-header .sellerNav .areaShops .shopContent dl dd a{
+ .sellerNav .areaShops .shopContent dl dd a{
 	display: inline-block;
 	width: 100%;
 	height: 100%;
 	padding:0;
 }
-header .sellerNav .areaShops .shopContent dl dd a:hover p{
+ .sellerNav .areaShops .shopContent dl dd a:hover p{
 	color: #589325;
 }
-header .sellerNav .areaShops .shopContent dl dd span{
+ .sellerNav .areaShops .shopContent dl dd span{
 	display: inline-block;
 	width: 68px;
 	font-size: 0;
 	text-align: right;
 	margin-left: 10px;
 }
-header .sellerNav .areaShops .shopContent dl dd img{
+ .sellerNav .areaShops .shopContent dl dd img{
 	display: inline-block;
 	width: 12px;
 	height: 12px;
@@ -367,7 +528,7 @@ header .sellerNav .areaShops .shopContent dl dd img{
 	margin-top: -6px;
 	text-align: right;
 }
-header .sellerNav .areaShops .shopContent dl dd p{
+ .sellerNav .areaShops .shopContent dl dd p{
 	width: 197px;
 	text-indent: 17px;
 	font-weight: normal;
@@ -376,28 +537,30 @@ header .sellerNav .areaShops .shopContent dl dd p{
 	text-overflow: ellipsis;
 	vertical-align: middle;
 }
-header .sellerNav .areaShops .changeBtn{
+ .sellerNav .areaShops .changeBtn{
 	width: 100%;
 	clear: both;
 	padding-top: 7px;
 }
-header .sellerNav .areaShops .changeBtn p{
+ .sellerNav .areaShops .changeBtn p{
 	width: 140px;
 	display: inline-block;
 	float: left;
 	font-size: 12px;
 }
-header .sellerNav .areaShops .changeBtn p span{margin-right: 5px;}
-header .sellerNav .areaShops .changeBtn p a{
+ .sellerNav .areaShops .changeBtn p span{margin-right: 5px;}
+ .sellerNav .areaShops .changeBtn p a{
 	display: inline-block;
 	color:#999999;
 	line-height: 24px;
 }
-header .sellerHr{
+ .sellerHr{
 	width: 100%;
 	height: 0;
 	border:2px solid #589325;
 	box-sizing: border-box;
+	position: relative;
+	z-index: 11111;
 }
 /*卖家中心左边部分*/
 .containerBox{
@@ -481,16 +644,16 @@ footer .indexTop li>div{
 	display: inline-block;
 	vertical-align: middle;
 }
-footer .indexTop li:nth-child(1)>div{
+footer .indexTop li:first-child>div{
 	background-position: -19px -66px;
 }
-footer .indexTop li:nth-child(2)>div{
+footer .indexTop li:first-child+li>div{
 	background-position: -19px -139px;
 }
-footer .indexTop li:nth-child(3)>div{
+footer .indexTop li:first-child+li+li>div{
 	background-position: -21px -214px;
 }
-footer .indexTop li:nth-child(4)>div{
+footer .indexTop li:first-child+li+li+li>div{
 	background-position: -21px -288px;
 }
 footer .indexTop li span em{margin-left: 10px;}

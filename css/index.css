@@ -7,6 +7,7 @@
 	width: 1190px;
 	margin:0 auto;
 	height: 38px;
+	position: relative;
 }
 .bannarBox .bannarLeft{
 	width: 250px;
@@ -101,7 +102,7 @@
 }
 .bannarBox .bannarMiddle ul li{
 	display: inline-block;
-	line-height: 34px;
+	line-height: 31px;
 	margin-right: 66px;
 }
 .bannarBox .bannarMiddle ul .active{
@@ -113,7 +114,9 @@
 .bannarBox .bannarRight{
 	float: right;
 	width: 189px;
-	position: relative;
+	position: absolute;
+	right: 0;
+	top: 2px;
 }
 .bannarBox .bannarRight h4{
 	width: 100%;
@@ -130,7 +133,7 @@
 	position: absolute;
 	top: 40px;
 	left: 0;
-	height: 403px;
+	height: 399px;
 	border-bottom: 1px solid #eeeeee;
 	background: #fff;
 	z-index: 111;
@@ -149,14 +152,10 @@
 	height: 38px;
 	text-align: center;
 	border:2px solid #ff6011;
-	-webkit-border-radius: 100%;
-	-moz-border-radius: 100%;
-	-ms-border-radius: 100%;
-	-o-border-radius: 100%;
-	border-radius: 100%;
 	color: #ff6011;
 	margin-right: 4px;
 	line-height: 38px;
+	border-radius: 100px;
 }
 .bannarBox .bannarRight .rightHeader p:first-child{
 	margin-left: 4px;
@@ -233,7 +232,7 @@
 	border:1px solid #eeeeee;
 	text-align: center;
 }
-.startGoods ul .active{
+.startGoods ul li:hover{
 	border:1px solid #a9c69a;
 }
 .startGoods ul li a h5{
@@ -345,7 +344,7 @@
 	text-align: center;
 	border:1px solid #e5e5e5;
 }
-.boxMain section .right ul .active{
+.boxMain section .right ul li:hover{
 	border:2px solid #9cb98d;
 }
 .boxMain section .right ul li:nth-child(even){
