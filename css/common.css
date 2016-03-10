@@ -15,25 +15,19 @@ select {
 	*background: none;
   /*Chrome和Firefox里面的边框是不一样的，所以复写了一下*/
   border: solid 1px #000;
-
   /*很关键：将默认的select选择框样式清除*/
   appearance:none;
   -moz-appearance:none;
   -webkit-appearance:none;
-
   /*在选择框的最右侧中间显示小箭头图片*/
   background: url("http://ourjs.github.io/static/2015/arrow.png") no-repeat scroll right center transparent;
-
-
   /*为下拉小箭头留出一点位置，避免被文字覆盖*/
   padding-right: 14px;
-  padding-right: 0px\9;
+  padding-right: 0px\0;
 }
-
-
 /*清除ie的默认选择框样式清除，隐藏下拉箭头*/
 select::-ms-expand { display: none; }
-button, input, select, textarea { font-size:100%;vertical-align:middle } 
+button,input, select, textarea { font-size:100%;vertical-align:middle;outline: none;} 
 table { border-collapse:collapse; border-spacing:0; }
 ul,dl{font-size:0;}
 ul li,dl dd{
@@ -75,6 +69,9 @@ h4{
 }
 .c9{
 	color: #999;
+}
+.rightzero{
+	margin-right: 0;
 }
 label{
 	font-size: 14px;
@@ -340,21 +337,40 @@ header .searchBox{
     margin-top: 32px;
     margin-right: 120px;
 }
+header .searchBox .search-list{
+	position: absolute;
+    left: 0;
+    top: 0;
+    width: 64px;
+	height: 34px;
+	border:1px solid #589325;
+}
 header .searchBox .serachBar{
 	width: 64px;
 	height: 34px;
 	display: inline-block;
-	border:1px solid #589325;
 	vertical-align: middle;
 	text-indent: 15px;
     line-height: 34px;
-    position: absolute;
-    left: 0;
-    top: 0;
     color: #999999;
-    background: url(../images/bj.png) no-repeat;
-	background-position: -351px -24px;
 	cursor: pointer;
+	overflow: hidden;
+}
+header .searchBox .active{
+	overflow: visible;
+}
+header .searchBox .serachBar .selected{
+	font-size: 12px;
+	 background: url(../images/bj.png) no-repeat;
+	background-position: -353px -24px;
+}
+header .searchBox .serachBar li{
+	background: #fff;
+	z-index: 99999;
+	position: relative;
+}
+header .searchBox .serachBar li:hover{
+	background: #f5f8fa;
 }
 header .searchBox input[type=text]{
 	width: 300px;
@@ -527,6 +543,7 @@ header .searchBox .goodsCar a p span{
 	vertical-align: middle;
 	margin-top: -6px;
 	text-align: right;
+	[;margin-right: -4px;];
 }
  .sellerNav .areaShops .shopContent dl dd p{
 	width: 197px;
@@ -636,6 +653,14 @@ footer .indexTop li{
 	line-height: 153px;
 	font-weight: bold;
 	margin-right: 66px;
+	margin-right: 62px;\9;
+}
+footer .indexTop li span .num{
+	font-family: '微软雅黑';
+	vertical-align: top;
+}
+footer .indexTop li:last-child{
+	margin-right: 0;
 }
 footer .indexTop li>div{
 	width: 54px;

@@ -156,13 +156,13 @@
 .owl-theme .owl-controls .owl-buttons .owl-prev{
 	position: absolute;
 	top: 0;
-	left: 32px;
+	left: 35px;
 	background: url(../images/btnleft1.png) no-repeat;
 }
 .owl-theme .owl-controls .owl-buttons .owl-next{
 	position: absolute;
 	top: 0;
-	right: -20px;
+	right: -27px;
 	background: url(../images/btnright1.png) no-repeat;
 }
 #owl-demo2 .owl-pagination,
