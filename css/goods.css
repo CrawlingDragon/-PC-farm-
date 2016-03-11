@@ -60,8 +60,7 @@
 }
 .goodsList-Cont .goodsNav-box .goodsWrap{
 	width: 960px;
-	min-height: 85px;
-	height: 104px;
+	height: auto;
 	overflow: hidden;
 	border-bottom:1px dotted #e5e5e5;
 	margin-left: 20px;
@@ -84,17 +83,18 @@
 }
 .goodsList-Cont .goodsNav-box .goodsWrap .goodsNav-list{
 	display: inline-block;
-	width: 752px;
-	padding-top: 13px;
+	width: 770px;
+	padding-top: 10px;
     padding-bottom: 10px;
+    height: 33px;
+    overflow: hidden;
 }
 .goodsList-Cont .goodsNav-box .goodsWrap .goodsNav-list a{
 	font-size: 14px;
 	display: inline-block;
-	line-height: 30px;
-	margin-right: 55px;
+	line-height: 1;
 	color: #333;
-	margin-bottom: 15px;
+	margin:10px 40px 10px 0;
 }
 .goodsList-Cont .goodsNav-box .goodsWrap .goodsNav-list a:hover{
 	color: #ff6600;
@@ -102,17 +102,25 @@
 .goodsList-Cont .goodsNav-box .goodsWrap .showBtn{
 	position: absolute;
 	top: 25px;
-	right: 14px;
+	right: 4px;
+	width: 40px;
 	font-size: 12px;
 	color: #999;
 	cursor: pointer;
 }
-.goodsList-Cont .goodsNav-box .goodsWrap2{
-	height: 63px;
+.goodsList-Cont .goodsNav-box .goodsWrap .showBtn .btn-show{
+	width: 100%;
+	height: 100%;
+	background: url(../images/moreup.png) no-repeat;
+	background-position: 29px 5px;
+}
+.goodsList-Cont .goodsNav-box .goodsWrap .showBtn .active{
+	background: url(../images/moredown.png) no-repeat;
+	background-position: 29px 5px;
 }
 .goodsList-filter{
 	margin-top: 20px;
-	margin-bottom: 40px;
+	margin-bottom: 20px;
 	font-size: 0;
 }
 .goodsList-filter .goodsList-filterTop{
@@ -122,13 +130,13 @@
 	line-height: 50px;
 	padding-left: 40px;
 	box-sizing:border-box;
-	font-size: 12px;
+	font-size: 0px;
 	color: #999;
 	background: #f9f9f9;
 }
 .goodsList-filter .goodsList-filterTop .filterTop-title{
-	margin-right: 10px;
 	cursor: default;
+	font-size: 12px;
 }
 .goodsList-filter .goodsList-filterTop .filterTop-title:hover{
 	color: #ff6600;
@@ -136,6 +144,7 @@
 .goodsList-filter .goodsList-filterTop .newBar i{
 	cursor: pointer;
 	margin-left: 40px;
+	font-size: 12px;
 }
 .goodsList-filter .goodsList-filterTop .newBar i img{
 	display: inline-block;
@@ -146,11 +155,13 @@
 	color: #ff6600;
 }
 .goodsList-filter .goodsList-filterTop .priceBar span{
-	margin-left: 50px;
+	margin-left: 40px;
+	font-size: 12px;
 }
 .goodsList-filter .goodsList-filterTop .priceBar i{
 	cursor: pointer;
 	margin-right: 15px;
+	font-size: 12px;
 }
 .goodsList-filter .goodsList-filterTop .priceBar i:hover{
 	color: #ff6600;
@@ -162,6 +173,7 @@
 	height: 50px;
 	border-left: 1px solid #eeeeee;
 	text-align: center;
+	font-size: 12px;
 }
 .goodsList-filter .goodsList-filterTop .page strong{
 	color: #ff6600;
@@ -179,11 +191,22 @@
 	padding-left: 40px;
 	background: #f9f9f9;
 }
+.goodsList-filter .goodsList-filterBottom .origin{
+	vertical-align: top;
+}
+.goodsList-filter .goodsList-filterBottom .originBox{
+	display: inline-block;
+	background: #fff;
+	width: 65px;
+	height: 30px;
+	margin-top: 10px;
+}
 .goodsList-filter .goodsList-filterBottom select{
 	display: inline-block;
 	width: 65px;
 	height: 30px;
 	border:1px solid #e5e5e5;
+	vertical-align: top;
 }
 .goodsList-ul{
 	width: 100%;
@@ -204,6 +227,9 @@
 .jqZoomPup{z-index:10;visibility:hidden;position:absolute;top:0px;left:0px;width:20px;height:20px;border:1px solid #aaa;background:#ffffff /*url(../images/zoom.png) 50% center no-repeat*/;opacity: 0.5;-moz-opacity: 0.5;-khtml-opacity: 0.5;filter: alpha(Opacity=50);}
 /*图片小图预览列表*/
 .spec-preview{width:230px;height:231px;border:1px solid #eeeeee;box-sizing:border-box;position: relative;}
+.spec-preview:hover{
+	border:1px solid #ff5500;
+}
 .spec-scroll{clear:both;margin-top:10px;width:230px;height: 37px;}
 .spec-scroll .prev{float:left;margin-right:4px;}
 .spec-scroll .next{float:right;}
@@ -254,7 +280,7 @@
 	margin-bottom: 60px;
 }
 .goodsList-wrap .btns .car{
-	display: inline-block;
+  display: inline-block;
   background-color: rgb(255, 85, 0);
   width: 85px;
   height: 25px;
@@ -264,6 +290,9 @@
   line-height: 25px;
   border-radius: 17px;
   margin-right: 25px;
+  behavior: url(css/ie-css3.htc);
+  position: relative;
+  z-index: 2;
 }
 .goodsList-wrap .btns .collect{
 	display: inline-block;
@@ -276,6 +305,9 @@
   border-radius: 17px;
   color: #ff6600;
   cursor: pointer;
+  behavior: url(css/ie-css3.htc);
+  position: relative;
+  z-index: 2;
 }
 .pageBox{
 	width: 100%;
@@ -333,6 +365,7 @@
 	height: auto;
 	min-height: 1000px;
 }
+
 .right-ad h4{
 	margin:19px 0 15px 0;
 	font-size: 18px;
@@ -350,6 +383,9 @@
 	width: 100%;
 	height: 180px;
 	overflow: hidden;
+}
+.right-ad .topUl li .imgs:hover{
+	border:1px solid #ff5500;
 }
 .right-ad .topUl li a img{
 	display: inline-block;
@@ -398,13 +434,12 @@
 	font-family: '黑体';
 	color: #666;
 	font-size: 16px;
-	margin-right: 40px;
+	padding:0 20px;
 	height: 40px;
 	line-height: 40px;
 	cursor: pointer;
 }
 .goodsList-bottom .ul-nav li.active{
-	padding:0 20px;
 	background: #e5e5e5;
 }
 .goodsList-bottom .ul-cont{
@@ -426,6 +461,7 @@
 	border:1px solid #e5e5e5;
 	background: #fff;
 	overflow: hidden;
+	box-sizing:border-box;
 }
 .goodsList-bottom .ul-cont li .imgs:hover{
 	border:2px solid green;

@@ -80,15 +80,6 @@ $(document).ready(function(){
 
 
 
-
-
-
-
-
-
-
-
-
 	})
 
 
