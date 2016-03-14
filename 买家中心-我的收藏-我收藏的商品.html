@@ -7,6 +7,7 @@
 	<link rel="stylesheet" href="css/common.css" type="text/css">
 	<link rel="stylesheet" href="css/seller.css" type="text/css">
 	<script type="text/javascript" src="js/jquery.1.11.3.min.js"></script>
+	<script type="text/javascript" src="js/layer.js"></script>
 	<!--[if IE]> 
 	<script> 
 	(function(){if(!/*@cc_on!@*/0)return;var e = "header,footer,nav,article,section".split(','),i=e.length;while(i--){document.createElement(e[i])}})() 
@@ -201,7 +202,7 @@
 					<span>&gt;</span>
 					<a href="">买家中心</a>
 					<span>&gt;</span>
-					<a href="">我的评论</a>
+					<a href="">我收藏的商品</a>
 				</div> <!-- 所在位置结束 -->
 				<div class="favoriteProduct"><!-- 我的收藏商品 -->
 					<form action="">
@@ -216,75 +217,118 @@
 						</div>
 					</form>
 					<div class="favoriteTitle">
-						<input type="checkbox" name="" id="">
-						<span>全选</span>
-						<input type="button" value="批量删除">
+						<input type="button" value="批量管理" id="management">
+							<div id="hideBox">
+								<input type="button" value="取消管理" id="cancel">
+								<input type="checkbox" name="" id="selectAll">
+								<span>全选</span>
+								<span class="del">删除</span>
+							</div>
 					</div>
 					<ul class="goodsList">
 						<li>
 							<div class="imgs"><img src="images/goods7.jpg" alt=""></div>
 							<h5>道尔纯硫酸钾复合肥葡萄专用多功能棚膜果蔬钙肥</h5>
-							<img src="images/delete.png" alt="" class="delImg">
+							<img src="images/delete2.png" alt="" class="delImg">
+							<div class="delBtn">
+								<input type="checkbox" name="checkName" id="" class="delbtns">
+							</div>
 						</li>
 						<li>
 							<div class="imgs"><img src="images/goods7.jpg" alt=""></div>
 							<h5>道尔纯硫酸钾复合肥葡萄专用多功能棚膜果蔬钙肥11111111111</h5>
-							<img src="images/delete.png" alt="" class="delImg">
+							<img src="images/delete2.png" alt="" class="delImg">
+							<div class="delBtn">
+								<input type="checkbox" name="checkName" id="" class="delbtns">
+							</div>
 						</li>
 						<li>
 							<div class="imgs"><img src="images/goods7.jpg" alt=""></div>
 							<h5>道尔纯硫酸钾复合肥葡萄专用多功能棚膜果蔬钙肥1111111111111111</h5>
-							<img src="images/delete.png" alt="" class="delImg">
+							<img src="images/delete2.png" alt="" class="delImg">
+							<div class="delBtn">
+								<input type="checkbox" name="checkName" id="" class="delbtns">
+							</div>
 						</li>
 						<li>
 							<div class="imgs"><img src="images/goods7.jpg" alt=""></div>
 							<h5>道尔纯硫酸钾复合肥葡萄专用多功能棚膜果蔬钙肥</h5>
-							<img src="images/delete.png" alt="" class="delImg">
+							<img src="images/delete2.png" alt="" class="delImg">
+							<div class="delBtn">
+								<input type="checkbox" name="checkName" id="" class="delbtns">
+							</div>
 						</li>
 						<li>
 							<div class="imgs"><img src="images/goods7.jpg" alt=""></div>
 							<h5>道尔纯硫酸钾复合肥葡萄专用多功能棚膜果蔬钙肥</h5>
-							<img src="images/delete.png" alt="" class="delImg">
+							<img src="images/delete2.png" alt="" class="delImg">
+							<div class="delBtn">
+								<input type="checkbox" name="checkName" id="">
+							</div>
 						</li>
 						<li>
 							<div class="imgs"><img src="images/goods7.jpg" alt=""></div>
 							<h5>道尔纯硫酸钾复合肥葡萄专用多功能棚膜果蔬钙肥</h5>
-							<img src="images/delete.png" alt="" class="delImg">
+							<img src="images/delete2.png" alt="" class="delImg">
+							<div class="delBtn">
+								<input type="checkbox" name="checkName" id="">
+							</div>
 						</li>
 						<li>
 							<div class="imgs"><img src="images/goods7.jpg" alt=""></div>
 							<h5>道尔纯硫酸钾复合肥葡萄专用多功能棚膜果蔬钙肥</h5>
-							<img src="images/delete.png" alt="" class="delImg">
+							<img src="images/delete2.png" alt="" class="delImg">
+							<div class="delBtn">
+								<input type="checkbox" name="checkName" id="">
+							</div>
 						</li>
 						<li>
 							<div class="imgs"><img src="images/goods7.jpg" alt=""></div>
 							<h5>道尔纯硫酸钾复合肥葡萄专用多功能棚膜果蔬钙肥</h5>
-							<img src="images/delete.png" alt="" class="delImg">
+							<img src="images/delete2.png" alt="" class="delImg">
+							<div class="delBtn">
+								<input type="checkbox" name="checkName" id="">
+							</div>
 						</li>
 						<li>
 							<div class="imgs"><img src="images/goods7.jpg" alt=""></div>
 							<h5>道尔纯硫酸钾复合肥葡萄专用多功能棚膜果蔬钙肥</h5>
-							<img src="images/delete.png" alt="" class="delImg">
+							<img src="images/delete2.png" alt="" class="delImg">
+							<div class="delBtn">
+								<input type="checkbox" name="checkName" id="">
+							</div>
 						</li>
 						<li>
 							<div class="imgs"><img src="images/goods7.jpg" alt=""></div>
 							<h5>道尔纯硫酸钾复合肥葡萄专用多功能棚膜果蔬钙肥</h5>
-							<img src="images/delete.png" alt="" class="delImg">
+							<img src="images/delete2.png" alt="" class="delImg">
+							<div class="delBtn">
+								<input type="checkbox" name="checkName" id="">
+							</div>
 						</li>
 						<li>
 							<div class="imgs"><img src="images/goods7.jpg" alt=""></div>
 							<h5>道尔纯硫酸钾复合肥葡萄专用多功能棚膜果蔬钙肥</h5>
-							<img src="images/delete.png" alt="" class="delImg">
+							<img src="images/delete2.png" alt="" class="delImg">
+							<div class="delBtn">
+								<input type="checkbox" name="checkName" id="">
+							</div>
 						</li>
 						<li>
 							<div class="imgs"><img src="images/goods7.jpg" alt=""></div>
 							<h5>道尔纯硫酸钾复合肥葡萄专用多功能棚膜果蔬钙肥</h5>
-							<img src="images/delete.png" alt="" class="delImg">
+							<img src="images/delete2.png" alt="" class="delImg">
+							<div class="delBtn">
+								<input type="checkbox" name="checkName" id="">
+							</div>
 						</li>
 						<li>
 							<div class="imgs"><img src="images/goods7.jpg" alt=""></div>
 							<h5>道尔纯硫酸钾复合肥葡萄专用多功能棚膜果蔬钙肥</h5>
-							<img src="images/delete.png" alt="" class="delImg">
+							<img src="images/delete2.png" alt="" class="delImg">
+							<div class="delBtn">
+								<input type="checkbox" name="checkName" id="">
+							</div>
 						</li>
 					</ul>
 				</div><!-- 我的收藏商品结束 -->
@@ -372,11 +416,108 @@
 $(".shopTitle").click(function(){
 	$(".shopContent").toggle(function(){});
 });
-//来自卖家和卖家的评价的卡片切换
-	$(".navButton>span").click(function(){
-		$(this).addClass("active").siblings().removeClass("active");
-		$('.showBox>div:eq('+$(this).index()+')').show().siblings().hide();
+
+//批量管理效果
+$('#management').click(function(){ //点击批量管理，
+	$(this).hide();					//隐藏批量管理按钮，
+	$('#hideBox').show();			//出现取消管理按钮
+	$('.goodsList .delBtn').show(); //默认选中出现
+});
+
+$('#cancel').click(function(){  //点击取消管理按钮
+	$('#management').show();	 //出现批量管理按钮
+	$(this).parent().hide();	//取消按钮隐藏
+	$('.goodsList .delBtn').hide(); //默认选中消失
+})
+$('.goodsList li .delImg').hover(function(){ //删除图片的hover效果
+	$(this).show();
+	$(this).parent().find('.imgs').css("border","1px solid #589325");
+},function(){
+	$(this).hide();
+	$(this).parent().find('.imgs').css("border","1px solid #e5e5e5");
+})
+//收藏的商品鼠标划过的效果
+$('.goodsList li .imgs').hover(function(){
+	$(this).css("border","1px solid #589325"); //边框变绿色
+	$(this).parent().find('.delImg').attr("src","images/delete2.png"); //变绿色的删除图片
+	$(this).parent().find('.delImg').show();
+	if($('#management').is(":hidden")){ 			//批量管理按钮隐藏时
+		$(this).parent().find('.delImg').hide();	//批量管理按钮隐藏时，删除图片不显示
+		$(this).css("border","1px solid #e5e5e5");  //图片边框变灰色
+	}else{
+
+	}
+},function(){
+	$(this).css("border","1px solid #e5e5e5");//边框变灰色
+	$(this).parent().find('.delImg').hide()  //删除图片隐藏
+})
+//全选按钮
+$('#selectAll').click(function(){
+	if($(this).prop("checked")){
+		$('.goodsList input[type=checkbox]').each(function(){
+			$(this).prop("checked",true);
+			$(this).parent().addClass('on-check');//添加选择的打勾效果
+		})
+	}else{
+		$('.goodsList input[type=checkbox]').each(function(){
+			$(this).prop("checked",false);
+			$(this).parent().removeClass('on-check');//去除选中的打勾效果
+		})
+	}
+});
+//商品单个复选框
+$('.goodsList input[type=checkbox]').click(function(){
+		if ($(this).prop("checked")) {
+			$(this).parent().addClass('on-check');		//添加选择的打勾效果
+		}else{
+			$('#selectAll').prop("checked",false);
+			$(this).parent().removeClass('on-check'); //去除选中的打勾效果
+		};
+		var checkedNum = $("input:checkbox[name='checkName']:checked").length; //复选狂选中的个数
+		var checkboxNum = $("input:checkbox[name='checkName']").length;       //复选框的个数
+		console.log(checkedNum);
+		console.log(checkboxNum);
+		if (checkedNum == checkboxNum) {          //选中个数等于复选框个数
+			$('#selectAll').prop("checked",true);  //全选框变成选中状态
+		}
 	})
+
+
+//全部删除
+$('.del').click(function(){
+	$('.goodsList input[type=checkbox]').each(function(){
+		if($(this).prop("checked")){            //商品列表内。被选中的复选框
+			$(this).parent().parent().remove();  //删除整个商品列表，
+			$('#selectAll').prop("checked",false); //全选按钮变成非选中状态
+		}else{
+
+		}
+	})
+})
+
+//删除按钮弹窗
+$(".delImg").click(function(){  //立即发货按钮弹出
+	var _this = $(this);
+	layer.open({
+		    type: 1,
+		    title:false,
+		    skin: 'layer-sendBox', //样式类名
+		    closeBtn: 0, //不显示关闭按钮
+		    shift: 0,
+		    area: ['330px', '155px'],
+		    shadeClose: false, //开启遮罩关闭
+		    content: '<div class="delBox"><h5>确定要删除此商品么?</h5><div><input type="button" class="delBoxBtn1" value="取消"><input type="button" class="delBoxBtn2" value="确定"></div></div>', //弹窗内容
+		    success:function(){
+		    	$(".delBoxBtn1").click(function(){ //取消按钮
+		    		layer.closeAll('page'); //遮罩关闭 
+		    	});
+		    	$(".delBoxBtn2").click(function(){ //确定按钮
+		    		layer.closeAll('page');  //遮罩关闭 
+		    		_this.parent().remove();  //删除商品li
+		    	});
+		    }
+		});
+	});
 
 </script>
 </body>
