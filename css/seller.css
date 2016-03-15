@@ -91,14 +91,18 @@
 	text-indent: 0;
 	margin:20px 0 15px 0px;
 }
+.listBox input[type=checkbox]{
+	margin-top: -2px;
+}
 .rightPart .tableBox .listBox h4 {
 	display: block;
 	height: 30px;
 	line-height: 30px;
-	background: #f5f8fa;
+	background: #e4f7d4;
 	font-size: 12px;
-	width: 929px;	
+	width: 920px;	
 	padding-left: 10px;
+	font-weight: normal;
 }
 .rightPart .tableBox .listBox h4 a{
 	color: #999999;
@@ -131,16 +135,22 @@
 	-webkit-align-items: center;
 	-ms-align-items: center;
 	align-items: center;
+	border-bottom: 1px solid #e4f7d4;
+	width: 928px;
 }
 .rightPart .tableBox .listBox .listCont .goodsInfo{
-	width: 465px;
+	width: 549px;
 	font-size: 12px;
 }
 .rightPart .tableBox .listBox .listCont .goodsInfo .goods1{
-	width: 100%;
+	width: 549px;
 	height: 80px;
 	clear: both;
-	margin:10px 0 12px 0;
+	border-bottom: 1px solid #e4f7d4;
+    padding: 20px 0 12px 0;
+}
+.rightPart .tableBox .listBox .listCont .goodsInfo .goods1:last-child{
+	border-bottom:none;
 }
 .rightPart .tableBox .listBox .listCont .goodsInfo .goods1>div{
 	float: left;
@@ -151,45 +161,76 @@
 .rightPart .tableBox .listBox .listCont .goodsInfo .goods1 .goodsName{
 	font-size: 12px;
 	color: #000;
-	min-width: 210px;
-	margin-left: 35px;
+	width: 146px;
+	margin-left: 15px;
 	margin-top: 20px;
+	margin-right: 16px;
 }
+
 .goodsName span{color:#999999;margin-top: 5px;display: inline-block;}
-.goods1 .price{line-height: 80px;font-size: 14px;font-weight: bold;}
-.goods1 .goodsNum{line-height: 80px;margin-left: 61px;}
+.goods1 .price{line-height: 80px;font-size: 14px;font-weight: bold;width: 110px;text-align: center;}
+.goods1 .goodsNum{
+	line-height: 80px;
+	width: 100px;
+	text-align: center;
+	width: 88px;
+}
+.goods1 .shipment{
+	width: 84px;
+	text-align: center;
+}
 .rightPart .tableBox .listBox .listCont>div{
 	float: left;
 }
 .rightPart .tableBox .listBox .listCont .freight{
 	font-size: 14px;
 	font-weight: bold;
-	margin-top: 35px;
+	width: 110px;
 	text-align: center;
-	margin-left: 30px;
+	border-left: 1px solid #e4f7d4;
+	border-right: 1px solid #e4f7d4;
+	position: relative;
 }
-.rightPart .tableBox .listBox .listCont .freight p:nth-child(2){
+.rightPart .tableBox .listBox .listCont .freight .freightBox{
+	width: 110px;
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+} 
+.rightPart .tableBox .listBox .listCont .freight p:first-child+p{
 	font-weight: normal;
 	margin-top: 5px;
 	font-size: 12px;
 }
 .rightPart .tableBox .listBox .listCont .orderStatus{
 	font-size: 12px;
-	margin:35px 35px 0 93px;
+	width: 110px;
+	text-align: center;
+	border-right: 1px solid #e4f7d4;
+	position: relative;
+}
+.rightPart .tableBox .listBox .listCont .orderStatus .orderStatusBox{
+	position: absolute;
+	top: 50%;
+	width: 110px;
+	text-align: center;
+	transform: translateY(-50%);
 }
 .rightPart .tableBox .listBox .listCont .orderStatus p{
 	margin-bottom: 5px;
 }
 .rightPart .tableBox .listBox .listCont .operate{
 	font-size: 14px;
-	margin-left: 60px;
+	width: 132px;
+	text-align: center;
+	height: auto;
 }
 .rightPart .tableBox .listBox .listCont .printImg{
 	display: inline-block;
 	width: 16px;
 	height: 15px;
 	cursor: pointer;
-	margin-left: 15px;
 }
 .rightPart .tableBox .listBox .listCont .printImg img{
 	width: 100%;
@@ -202,9 +243,11 @@
 	background: #fff;
 	height: 33px;
 	width: 88px;
+	margin: 0 auto;
 	border:1px solid #d1d1d1;
 	margin-top: 10px;
 	cursor: pointer;
+
 }
 .rightPart .tableBox .listBox .listCont .operate a{
 	display:block;
