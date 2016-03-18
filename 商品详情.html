@@ -11,6 +11,7 @@
 	<script type="text/javascript" src="js/ad.js"></script>
 	<script type="text/javascript" src="js/common.js"></script>
 	<script type="text/javascript" src="js/layer.js"></script>
+	<script type="text/javascript" src="js/baidu.js"></script>
     <!-- 实例化编辑器 -->
 	<!--[if IE]> 
 	<script> 
@@ -274,8 +275,16 @@
 					<div class="goodsDetail-top-numbering clear"> <!-- 商品编号 -->
 						<span class="goodsDetail-top-num">商品编号<i>ZNZX92ZNZX92</i></span>
 						<span class="shareBox">
-							<i>
+							<i class="share-title" style="position: relative;">
 								<img src="images/share.png" alt="">分享
+								<div class="bdsharebuttonbox shareCont"><!-- 百度分享插件 -->
+									<a href="#" class="bds_more" data-cmd="more"></a>
+									<a href="#" class="bds_qzone" data-cmd="qzone"></a>
+									<a href="#" class="bds_tsina" data-cmd="tsina"></a>
+									<a href="#" class="bds_tqq" data-cmd="tqq"></a>
+									<a href="#" class="bds_renren" data-cmd="renren"></a>
+									<a href="#" class="bds_weixin" data-cmd="weixin"></a>
+								</div><!-- 百度分享插件end -->
 							</i>
 							<i>
 								<img src="images/greenstar.png" alt="">收藏
@@ -694,6 +703,19 @@
 			$(this).addClass('active').siblings().removeClass('active');
 			$('#showBox .showCont:eq('+$(this).index()+')').show().siblings().hide();
 		})
+		//分享部分显示
+		$('.share-title').hover(function(){
+			$('.shareCont').toggle();
+		})
+		$('.shareCont').hover(function(){
+			$(this).show();
+		})
+		//分享部分显示end
+		//选择规格效果
+		$('.specification-num').click(function(){
+			$(this).addClass('active').siblings().removeClass('active');
+		})
+		//选择规格效果end
 
 		$(".proxy").click(function(){  //修改价格按钮弹出
 			_this = $(this);

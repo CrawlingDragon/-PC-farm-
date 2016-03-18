@@ -107,7 +107,7 @@
 	margin-top: 10px;
 }
 /*放大镜效果*/
-.lanrenzhijia{ width:400px; height:auto; overflow:hidden;float: left;}
+.lanrenzhijia{ width:400px; height:auto; float: left;}
 .jqzoom{float:left;border:none;position:relative;padding:0px;cursor:pointer;margin:0px;display:block;width: 398px;height: 398px;}
 .jqzoom img{ background:url(http://www.lanrenzhijia.com/demo/images/loading.gif) no-repeat center center;width: 100%;height: 100%;}
 .zoomdiv{z-index:100;position:absolute;top:0px;left:0px;width:350px;height:350px;background:#ffffff;border:1px solid #CCCCCC;display:none;text-align:center;overflow:hidden;}
@@ -140,6 +140,15 @@
 .goodsDetail-top-numbering .shareBox i{
 	margin-right: 10px;
 	cursor: pointer;
+}
+.goodsDetail-top-numbering .shareBox .shareCont{
+	position: absolute;
+	display: none;
+	top: 14px;
+    left: 0;
+    width: 150px;
+    height: 33px;
+    padding-top: 5px;
 }
 .goodsDetail-top-numbering .shareBox img{
 	margin-right: 6px;

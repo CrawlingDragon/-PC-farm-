@@ -356,21 +356,21 @@
 													<p>800.00</p>
 													<p>x10</p>
 												</div>
-												<div class="goodsNum">
+												<div class="goodsNum"><!-- 改价总价 -->
 													<p class="goodsNum-txt">1000.00</p>
-													<input type="text" name="" id="" value="" class="goodsNum-input">
+													<input onkeyup="if(this.value==this.value2)return;if(this.value.search(/^\d*(?:\.\d{0,2})?$/)==-1)this.value=(this.value2)?this.value2:'';else this.value2=this.value;" class="goodsNum-input">
 													<div class="changeNum">改价</div>
 													<div class="goodsNum-btn hide clear"><span class="left">确定</span><span class="right">取消</span></div>
-												</div>
-												<div class="shipment goodsNum">
+												</div><!-- 改价总价end -->
+												<div class="shipment goodsNum"><!-- 改价运费 -->
 													<p class="goodsNum-txt">10</p>
-													<input type="text" name="" id="" class="goodsNum-input">
+													<input onkeyup="if(this.value==this.value2)return;if(this.value.search(/^\d*(?:\.\d{0,2})?$/)==-1)this.value=(this.value2)?this.value2:'';else this.value2=this.value;" class="goodsNum-input">
 													<div class="changeNum">改价</div>
 													<div class="goodsNum-btn hide clear">
 														<span class="left">确定</span>
 														<span class="right">取消</span>
 													</div>
-												</div>
+												</div><!-- 改价运费end -->
 											</div><!-- 单个商品的信息end -->
 											<div class="goods1"> <!-- 单个商品的信息start -->
 												<div><a href=""><img src="images/goods5.png" alt=""></a></div>
@@ -384,10 +384,11 @@
 												</div>
 												<div class="goodsNum">
 													<p class="goodsNum-txt">1000.00</p>
-													<input type="text" name="" id="" value="" class="goodsNum-input">
+													<input type="text" name="" id="" value="" class="goodsNum-input" >
 													<div class="changeNum">改价</div>
 													<div class="goodsNum-btn hide clear"><span class="left">确定</span><span class="right">取消</span></div>
 												</div>
+
 												<div class="shipment goodsNum">
 													<p class="goodsNum-txt">10</p>
 													<input type="text" name="" id="" class="goodsNum-input">
