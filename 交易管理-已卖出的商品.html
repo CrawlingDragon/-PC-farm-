@@ -785,6 +785,7 @@ $(document).ready(function(){
 	// 改价的确定功能
 	$('.goodsNum-btn .left').click(function(){
 		var v = $(this).parent().parent().find('.goodsNum-input'); 
+		var txt1 =$(this).parent().parent().find('.goodsNum-txt');	
 		var val = v.val();               							//输入框的值
 		$(this).parent().hide();									//确定 取消按钮消失
 		$(this).parent().parent().find('.goodsNum-input').hide();   //输入框消失
