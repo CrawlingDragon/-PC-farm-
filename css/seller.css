@@ -535,7 +535,7 @@
 	margin: 20px 0 30px 28px;
 }
 .progressBox .progressList{
-
+	
 }
 .progressBox .progressList .listBox{
 	margin-left: 32px;
@@ -604,6 +604,34 @@
 	color: #999999;
 	text-indent: 10px;
 	line-height: 25px;
+}
+.right .startBox h3{
+	font-size: 14px;
+    font-weight: bold;
+    text-indent: 33px;
+    background: url(../images/bj.png) no-repeat;
+    background-position: -13px -611px;
+    line-height: 46px;
+    height: 46px;
+    margin-top: 10px;
+    margin-bottom: 27px;
+    color: #666666;
+}
+.right .startBox{
+	padding-bottom: 48px;
+	border-bottom: 1px solid #e5e5e5;
+	font-size: 14px;
+	color: #666;
+	margin-bottom: 48px;
+}
+.right .startBox img{
+	vertical-align: middle;
+}
+.right .startBox .stratList{
+	margin:0 0 20px 31px;
+}
+.right .startBox .stratList i{
+	margin-left: 58px;
 }
 .progressBtn{
 	width: 100%;
