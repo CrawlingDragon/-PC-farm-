@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-
+		// 顶部消息的显示效果
 		$('.message-title').hover(function(){
 			$('.messageBox').show();
 			$('.header-left').css({"background":"#fff","border":"1px solid #e5e5e5","border-bottom":"none","border-top":"none"});
@@ -12,10 +12,13 @@ $(document).ready(function(){
 		})
 		$('.messageBox').hover(function(){
 			$(this).show();
-			$('.header-left').css("background","#fff");
+			$('.message-title').addClass("active");
+			$('.header-left').css({"border":"1px solid #e5e5e5","border-bottom":"none","border-top":"none","background":"#fff"});
+			console.log("aa");
 		},function(){
 			$(this).hide();
-			$('.header-left').css("background","#f5f8fa")
+			$('.header-left').css({"background":"#f5f8fa","border":"none"});
+			$('.message-title').removeClass("active");
 		});
 
 		//账户显示
@@ -98,3 +101,37 @@ $(document).ready(function(){
 			   }
 			 }
 		}
+$(document).ready(function(){
+	//改价功能
+	$('.changeNum').click(function(){
+		var txt = $(this).parent().find('.goodsNum-txt').text(); 
+		$(this).hide();               		 				//改价按钮本身消失
+		$(this).parent().find('.goodsNum-txt').hide();		//文字加个消失
+		$(this).next().show();				 				//确定，取消按钮出现 
+		$(this).prev().show();								//输入框出现
+		$(this).prev().focus();				 				//输入框获取焦点
+		$(this).prev().val(txt);							//输入框获取文字的内容
+	});
+	// 改价的确定功能
+	$('.goodsNum-btn .left').click(function(){
+		var v = $(this).parent().parent().find('.goodsNum-input'); 
+		var txt1 = $(this).parent().parent().find('.goodsNum-txt');
+		var txt2 = $(this).parent().parent().find('.goodsNum-txt2');
+		var val = v.val();               							//输入框的值
+		$(this).parent().hide();									//确定 取消按钮消失
+		$(this).parent().parent().find('.goodsNum-input').hide();   //输入框消失
+		$(this).parent().prev().show();								//改价按钮显示
+		txt1.show();												//文字出现
+		txt1.css("text-decoration","line-through");					//原来价格增加中滑线
+		txt2.text(val);												//把输入框的内容替换到文字内
+
+	});
+	// 改价的取消功能
+	$('.goodsNum-btn .right').click(function(){
+		$(this).parent().hide();									//确定 取消按钮消失
+		$(this).parent().parent().find('.goodsNum-input').hide();   //输入框消失
+		$(this).parent().prev().show();								//改价按钮显示
+		$(this).parent().parent().find('.goodsNum-txt').show();		//文字出现
+	})
+
+})

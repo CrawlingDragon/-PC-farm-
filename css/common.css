@@ -77,10 +77,10 @@ label{
 	font-size: 14px;
 	color: #666666;
 }
-input[type=text],select{
+input[type=text],select,input[type=password]{
 	border: 1px solid #e5e5e5;
 }
-input[type=text],textarea,select{
+input[type=text],textarea,select,input[type=password]{
 	padding-left: 5px;
 	box-sizing:border-box;
 }

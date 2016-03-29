@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="css/seller.css" type="text/css">
 	<script type="text/javascript" src="js/jquery.1.11.3.min.js"></script>
 	<script type="text/javascript" src="js/common.js"></script>
+	<script type="text/javascript" src="js/jquery.raty.js"></script>
 	<!--[if IE]> 
 	<script> 
 	(function(){if(!/*@cc_on!@*/0)return;var e = "header,footer,nav,article,section".split(','),i=e.length;while(i--){document.createElement(e[i])}})() 
@@ -372,30 +373,18 @@
 						<h3>对商铺进行评价</h3>
 						<div class="stratList">
 							<span>商品描述相符：</span>
-							<img src="images/bigstart1.png" alt="">
-							<img src="images/bigstart1.png" alt="">
-							<img src="images/bigstart1.png" alt="">
-							<img src="images/bigstart1.png" alt="">
-							<img src="images/bigstart1.png" alt="">
-							<i><strong>5.0</strong>分</i>
+							<div id="targetScore1" ></div>
+							<i><strong id="hint1">5.0</strong>分</i>
 						</div>
 						<div class="stratList">
 							<span>商铺服务态度：</span>
-							<img src="images/bigstart1.png" alt="">
-							<img src="images/bigstart1.png" alt="">
-							<img src="images/bigstart1.png" alt="">
-							<img src="images/bigstart1.png" alt="">
-							<img src="images/bigstart1.png" alt="">
-							<i><strong>5.0</strong>分</i>
+							<div id="targetScore2" ></div>
+							<i><strong id="hint2">5.0</strong>分</i>
 						</div>
 						<div class="stratList">
 							<span>商品发货速度：</span>
-							<img src="images/bigstart1.png" alt="">
-							<img src="images/bigstart1.png" alt="">
-							<img src="images/bigstart1.png" alt="">
-							<img src="images/bigstart1.png" alt="">
-							<img src="images/bigstart1.png" alt="">
-							<i><strong>5.0</strong>分</i>
+							<div id="targetScore3" ></div>
+							<i><strong id="hint3"></strong>分</i>
 						</div>
 					</div><!-- 评价星区域end -->
 					<div class="progressBtn">
@@ -457,5 +446,53 @@
 			<p>增值电信业务经营许可证:浙B2-20150086</p>
 		</section> 
 	</footer><!-- 脚部结束 -->
+	<script type="text/javascript">
+		$.fn.raty.defaults.path = './images';
+   $(function() {
+
+$('#targetScore1').raty({
+  score: 4,
+  // targetScore: '#target-score',
+  half: true,
+   targetKeep : true,
+  targetType : 'score',   //评星的类型，数字或者字母
+  starHalf : 'bigstart3.png', //半显示的图片
+  starOff : 'bigstart1.png',     //显示黄星的图片
+  starOn  : 'bigstart2.png' ,      //显示未打星的图片
+  //path: 'assets/images',        //设置图片的路径
+   target : '#hint1'
+  // click:function(){
+  //   alert("感谢评价");
+  // }
+ });
+$('#targetScore2').raty({
+  score: 4,
+  // targetScore: '#target-score',
+  half: true,
+   targetKeep : true,
+  targetType : 'score',   //评星的类型，数字或者字母
+  starHalf : 'bigstart3.png', //半显示的图片
+  starOff : 'bigstart1.png',     //显示黄星的图片
+  starOn  : 'bigstart2.png' ,      //显示未打星的图片
+  //path: 'assets/images',        //设置图片的路径
+   target : '#hint2'
+ });
+
+$('#targetScore3').raty({
+  score: 4,
+  // targetScore: '#target-score',
+  half: true,
+   targetKeep : true,
+  targetType : 'score',   //评星的类型，数字或者字母
+  starHalf : 'bigstart3.png', //半显示的图片
+  starOff : 'bigstart1.png',     //显示黄星的图片
+  starOn  : 'bigstart2.png' ,      //显示未打星的图片
+  //path: 'assets/images',        //设置图片的路径
+   target : '#hint3'
+ });
+
+
+});
+	</script>
 </body>
 </html>

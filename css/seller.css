@@ -630,6 +630,11 @@
 .right .startBox .stratList{
 	margin:0 0 20px 31px;
 }
+.right .startBox .stratList #targetScore1,
+.right .startBox .stratList #targetScore2,
+.right .startBox .stratList #targetScore3{
+	display: inline-block;
+}
 .right .startBox .stratList i{
 	margin-left: 58px;
 }
@@ -2138,7 +2143,7 @@
 .wealthOrderDetails .wealthOrderDetails-head .wealthOrderDetails-headBar .wealthOrderDetails-headBarbg{
 	width: 875px;
     height: 33px;
-    background: url(../images/orderbg.png) no-repeat;
+    background: url(../images/active1.png) no-repeat;
     margin: 10px 0 20px 12px;
 }
 .wealthOrderDetails-head .wealthOrderDetails-headBartimes span{
@@ -2154,8 +2159,9 @@
 }
 .wealthOrderDetails .wealthOrderDetails-times span{
 	font-weight: bolder;
-	color: #ff6600;
+	color: #333333;
 	margin:0 5px;
+	font-size: 14px;
 }
 .wealthOrderDetails .wealthOrderDetails-confirm{
 	margin-top: 20px;
@@ -2166,6 +2172,7 @@
 	width: 100px;
 	height: 35px;
 	border:1px solid #579423;
+	color: #579423;
 	text-align: center;
 	line-height: 35px;
 	margin-left: 20px;
@@ -2229,28 +2236,99 @@
 	text-align: center;
 	border:1px solid #e5e5e5;
 }
+.wealthOrderDetails table tr td.tableActive{
+	font-size: 16px;
+}
+.wealthOrderDetails table tr td.tableAllnum{
+	color: #333;
+	font-size: 16px;
+	font-weight: bolder;
+}
 .wealthOrderDetails table tr td .imgs{
 	width: 75px;
 	height: 75px;
-	margin: 0 auto;
 	border:1px solid #e5e5e5;
+	float: left;
+	margin:0 35px 0 54px;
 }
 .wealthOrderDetails table tr td .imgs img{
 	width: 100%;
 	height: 100%;
 }
+.wealthOrderDetails table tr td .tableTxt{
+	float: left;
+	width: 143px;
+	display:table;
+	height: 75px;   
+}
+.wealthOrderDetails table tr td .tableTxt a{
+	display: block;
+	width: 143px;
+	 vertical-align:middle;   
+  display:table-cell;
+}
 .wealthOrderDetails table tr td p{
+	padding-top: 40px;
+	box-sizing:border-box;
+	width: 100%;
 	height: 100px;
-	line-height: 101px;
+	/*line-height: 101px;*/
 	border-bottom: 1px solid #e5e5e5;
+}
+.wealthOrderDetails table tr td p span{
+	display: block;
+}
+.wealthOrderDetails table tr td p span.tableP{
+	text-decoration: line-through;
+	color: #999999;
 }
 .wealthOrderDetails table tr td p:last-child{
 	border-bottom:none;
 }
-.wealthOrderDetails table tr td.tableTxt{
-	padding:0 5px;
+.wealthOrderDetails .tableBottom{
+	width: 1193px;
+	height: 82px;
+	border:1px solid #e5e5e5;
+	border-top: none;
 	box-sizing:border-box;
+	text-align: right;
+	padding-top: 20px;
+	padding-right: 40px;
+	font-size: 12px;
+	color: #666;
 }
+.wealthOrderDetails .tableBottom p{
+	margin-bottom: 15px;
+	font-family: '宋体';
+}
+/*.wealthOrderDetails .tableBottom p .f16{
+	font-size: 16px;
+}*/
+.wealthOrderDetails .tableBottom span{
+	display: inline-block;
+	width: 178px;
+}
+.wealthOrderDetails .tableMoney{
+	width: 1193px;
+	box-sizing:border-box;
+	height: 66px;
+	line-height: 66px;
+	background: #eeeeee;
+	border:1px solid #e5e5e5;
+	border-top: none;
+	text-align: right;
+	padding-right: 40px;
+}
+.wealthOrderDetails .tableBottom span .rmb{
+	font-family: '微软雅黑';
+	/*font-size: 14px;*/
+}
+.wealthOrderDetails .tableMoney span{
+	font-family: '微软雅黑';
+	font-size: 24px;
+	color: #ff6600;
+}
+
 /*账户管理-我的财富-账户设置*/
 #accountSettings #box1 ul li{
 	float: left;
@@ -2481,7 +2559,8 @@
 	width: 192px;
 	text-align: right;
 }
-.resetPay form div input[type=text]{
+.resetPay form div input[type=text],
+.resetPay form div input[type=password]{
 	display: inline-block;
 	width: 255px;
 	height: 35px;
@@ -2495,16 +2574,37 @@
 	color: #fff;
 	font-size: 14px;
 }
+.resetPay form div #codeBtn{
+  display: inline-block;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb( 229, 229, 229 );
+  background-color: rgb( 247, 247, 247 );
+  width: 125px;
+  height: 35px;
+  color: #666;
+  font-size: 12px;
+  text-align: center;
+  line-height: 35px;
+  cursor: pointer;
+}
 .resetPay form div input[type=text]::-webkit-input-placeholder,
 .creditAdjustment form>div input[type=text]::-webkit-input-placeholder{
 	font-size: 12px;
 }
 .resetPay .resetPay-btn{
-	margin:30px 0 0 229px;
+	margin:30px 0 50px 229px;
 	width: 110px;
 	height: 50px;
 	line-height: 50px;
 } 
+.resetPay .tipTxt{
+	margin-left: 202px;
+	line-height: 33px;
+	margin-bottom: -16px;
+	color: #ff6600;
+	font-size: 12px;
+}
 /*授信管理*/
 .creditAdjustment h2{
 	margin: 0 0 30px 25px;
@@ -2916,7 +3016,7 @@
 	width: 200px;
 }
 /*消息*/
-.messageBox #box1 ul li{
+#messageBox #box1 ul li{
 	padding:18px 45px;
 	float: left;
 	background: #fff;
@@ -2924,7 +3024,7 @@
 	cursor: pointer;
 	font-weight: bolder;
 }
-.messageBox #box1 ul li span{
+#messageBox #box1 ul li span{
 	position: absolute;
 	top: 5px;
 	right: 5px;
@@ -2937,14 +3037,14 @@
  	line-height: 17px;
  	color: #fff;
 }
-.messageBox #box1 ul li.active{
+#messageBox #box1 ul li.active{
 	border:1px solid #e5e5e5;
 	border-top: 3px solid #589325;
 	margin-bottom: -3px;
 	border-bottom: 1px solid #fff;
 	color: #589325;
 }
-.messageBox .showBox1{
+#messageBox .showBox1{
 	width: 1194px;
 }
 .buyerNav .active a{
